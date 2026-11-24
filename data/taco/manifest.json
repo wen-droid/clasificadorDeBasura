@@ -1,0 +1,3271 @@
+{
+  "index": "https://raw.githubusercontent.com/pedropro/TACO/master/data/annotations.json",
+  "index_sha256": "812c2e3f0d336b437f276597715de2abb08bb8a641599c45f593d233ec66457b",
+  "excluded_batch": "batch_8",
+  "rows": [
+    {
+      "image_id": 132,
+      "source": "batch_10/000031.jpg",
+      "url": "https://img.tacodataset.org/img/48694143076.jpg",
+      "label": 2,
+      "box": [
+        0.34594298245614036,
+        0.377,
+        0.9994517543859649,
+        0.53875
+      ],
+      "whole": true,
+      "license": "CC",
+      "split": "test",
+      "path": "data/taco/images/132.jpg"
+    },
+    {
+      "image_id": 186,
+      "source": "batch_10/000085.jpg",
+      "url": "https://img.tacodataset.org/img/48694281772.jpg",
+      "label": 2,
+      "box": [
+        0.569078947368421,
+        0.35175,
+        0.9824561403508771,
+        0.46075
+      ],
+      "whole": true,
+      "license": "CC",
+      "split": "test",
+      "path": "data/taco/images/186.jpg"
+    },
+    {
+      "image_id": 1450,
+      "source": "batch_9/000050.jpg",
+      "url": "https://img.tacodataset.org/img/48661293747.jpg",
+      "label": 2,
+      "box": [
+        0.10692401960784313,
+        0.2969771241830065,
+        0.6387867647058824,
+        0.8366013071895423
+      ],
+      "whole": true,
+      "license": "CC",
+      "split": "test",
+      "path": "data/taco/images/1450.jpg"
+    },
+    {
+      "image_id": 127,
+      "source": "batch_10/000026.jpg",
+      "url": "https://img.tacodataset.org/img/48694144626.jpg",
+      "label": 2,
+      "box": [
+        0.42225,
+        0.42598684210526316,
+        0.5345,
+        0.6666666666666666
+      ],
+      "whole": false,
+      "license": "CC",
+      "split": "test",
+      "path": "data/taco/images/127.jpg"
+    },
+    {
+      "image_id": 1488,
+      "source": "batch_9/000088.jpg",
+      "url": "https://img.tacodataset.org/img/48701151906.jpg",
+      "label": 2,
+      "box": [
+        0.7549342105263158,
+        0.0,
+        0.9994517543859649,
+        0.1905
+      ],
+      "whole": true,
+      "license": "CC",
+      "split": "test",
+      "path": "data/taco/images/1488.jpg"
+    },
+    {
+      "image_id": 1483,
+      "source": "batch_9/000083.jpg",
+      "url": "https://img.tacodataset.org/img/48700817128.jpg",
+      "label": 5,
+      "box": [
+        0.39418859649122806,
+        0.29975,
+        0.6650219298245614,
+        0.477
+      ],
+      "whole": true,
+      "license": "CC",
+      "split": "test",
+      "path": "data/taco/images/1483.jpg"
+    },
+    {
+      "image_id": 1452,
+      "source": "batch_9/000052.jpg",
+      "url": "https://img.tacodataset.org/img/48661146636.jpg",
+      "label": 6,
+      "box": [
+        0.4678308823529412,
+        0.47263071895424835,
+        0.8419117647058824,
+        0.6584967320261438
+      ],
+      "whole": true,
+      "license": "CC",
+      "split": "test",
+      "path": "data/taco/images/1452.jpg"
+    },
+    {
+      "image_id": 139,
+      "source": "batch_10/000038.jpg",
+      "url": "https://img.tacodataset.org/img/48694140996.jpg",
+      "label": 6,
+      "box": [
+        0.0005482456140350877,
+        0.3805,
+        0.24835526315789475,
+        0.5345
+      ],
+      "whole": false,
+      "license": "CC",
+      "split": "test",
+      "path": "data/taco/images/139.jpg"
+    },
+    {
+      "image_id": 1418,
+      "source": "batch_9/000018.jpg",
+      "url": "https://img.tacodataset.org/img/48661120728.jpg",
+      "label": 7,
+      "box": [
+        0.39133986928104575,
+        0.6553308823529411,
+        0.6633986928104575,
+        0.8072916666666666
+      ],
+      "whole": true,
+      "license": "CC",
+      "split": "test",
+      "path": "data/taco/images/1418.jpg"
+    },
+    {
+      "image_id": 1467,
+      "source": "batch_9/000067.jpg",
+      "url": "https://img.tacodataset.org/img/48701177861.jpg",
+      "label": 7,
+      "box": [
+        0.41831140350877194,
+        0.517,
+        0.7911184210526315,
+        0.63675
+      ],
+      "whole": true,
+      "license": "CC",
+      "split": "test",
+      "path": "data/taco/images/1467.jpg"
+    },
+    {
+      "image_id": 1408,
+      "source": "batch_9/000008.jpg",
+      "url": "https://img.tacodataset.org/img/48631087802.jpg",
+      "label": 7,
+      "box": [
+        0.4644607843137255,
+        0.37285539215686275,
+        0.7120098039215685,
+        0.5131740196078431
+      ],
+      "whole": false,
+      "license": "CC",
+      "split": "test",
+      "path": "data/taco/images/1408.jpg"
+    },
+    {
+      "image_id": 106,
+      "source": "batch_10/000005.jpg",
+      "url": "https://img.tacodataset.org/img/48701315677.jpg",
+      "label": 7,
+      "box": [
+        0.5970394736842105,
+        0.38775,
+        0.8382675438596491,
+        0.528
+      ],
+      "whole": false,
+      "license": "CC",
+      "split": "test",
+      "path": "data/taco/images/106.jpg"
+    },
+    {
+      "image_id": 1490,
+      "source": "batch_9/000090.jpg",
+      "url": "https://img.tacodataset.org/img/48701150606.jpg",
+      "label": 7,
+      "box": [
+        0.45778508771929827,
+        0.61675,
+        0.7510964912280702,
+        0.72125
+      ],
+      "whole": true,
+      "license": "CC",
+      "split": "test",
+      "path": "data/taco/images/1490.jpg"
+    },
+    {
+      "image_id": 143,
+      "source": "batch_10/000042.jpg",
+      "url": "https://img.tacodataset.org/img/48693787953.jpg",
+      "label": 7,
+      "box": [
+        0.40844298245614036,
+        0.3625,
+        0.7099780701754386,
+        0.56625
+      ],
+      "whole": true,
+      "license": "CC",
+      "split": "test",
+      "path": "data/taco/images/143.jpg"
+    },
+    {
+      "image_id": 1420,
+      "source": "batch_9/000020.jpg",
+      "url": "https://img.tacodataset.org/img/48661120173.jpg",
+      "label": 7,
+      "box": [
+        0.2222222222222222,
+        0.6884191176470587,
+        0.6981209150326797,
+        0.8667279411764706
+      ],
+      "whole": true,
+      "license": "CC",
+      "split": "test",
+      "path": "data/taco/images/1420.jpg"
+    },
+    {
+      "image_id": 107,
+      "source": "batch_10/000006.jpg",
+      "url": "https://img.tacodataset.org/img/48701315167.jpg",
+      "label": 7,
+      "box": [
+        0.5,
+        0.30875,
+        0.7225877192982456,
+        0.46975
+      ],
+      "whole": true,
+      "license": "CC",
+      "split": "test",
+      "path": "data/taco/images/107.jpg"
+    },
+    {
+      "image_id": 130,
+      "source": "batch_10/000029.jpg",
+      "url": "https://img.tacodataset.org/img/48693803663.jpg",
+      "label": 7,
+      "box": [
+        0.29577850877192985,
+        0.482,
+        0.6263706140350878,
+        0.62225
+      ],
+      "whole": true,
+      "license": "CC",
+      "split": "test",
+      "path": "data/taco/images/130.jpg"
+    },
+    {
+      "image_id": 92,
+      "source": "batch_1/000119.JPG",
+      "url": "https://img.tacodataset.org/img/47803374112.jpg",
+      "label": 1,
+      "box": [
+        0.37663398692810457,
+        0.5355392156862745,
+        0.5776143790849673,
+        0.7729779411764706
+      ],
+      "whole": true,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/92.jpg"
+    },
+    {
+      "image_id": 1216,
+      "source": "batch_7/000052.JPG",
+      "url": "https://img.tacodataset.org/img/32912165427.jpg",
+      "label": 2,
+      "box": [
+        0.40349264705882354,
+        0.5849673202614379,
+        0.5732230392156863,
+        0.7638888888888888
+      ],
+      "whole": true,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/1216.jpg"
+    },
+    {
+      "image_id": 1215,
+      "source": "batch_7/000051.JPG",
+      "url": "https://img.tacodataset.org/img/47066847104.jpg",
+      "label": 2,
+      "box": [
+        0.19934640522875818,
+        0.5143995098039216,
+        0.7430555555555556,
+        0.7610294117647058
+      ],
+      "whole": false,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/1215.jpg"
+    },
+    {
+      "image_id": 99,
+      "source": "batch_1/000128.JPG",
+      "url": "https://img.tacodataset.org/img/40888924973.jpg",
+      "label": 2,
+      "box": [
+        0.0,
+        0.33486519607843135,
+        0.7908496732026143,
+        0.8728553921568627
+      ],
+      "whole": false,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/99.jpg"
+    },
+    {
+      "image_id": 692,
+      "source": "batch_2/000008.JPG",
+      "url": "https://img.tacodataset.org/img/33978354478.jpg",
+      "label": 2,
+      "box": [
+        0.176062091503268,
+        0.2702205882352941,
+        0.6507352941176471,
+        0.6121323529411765
+      ],
+      "whole": true,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/692.jpg"
+    },
+    {
+      "image_id": 207,
+      "source": "batch_11/000006.jpg",
+      "url": "https://img.tacodataset.org/img/48694037276.jpg",
+      "label": 2,
+      "box": [
+        0.35252192982456143,
+        0.45025,
+        0.7028508771929824,
+        0.6715
+      ],
+      "whole": true,
+      "license": "CC",
+      "split": "train",
+      "path": "data/taco/images/207.jpg"
+    },
+    {
+      "image_id": 1159,
+      "source": "batch_6/000017.JPG",
+      "url": "https://img.tacodataset.org/img/46939990835.jpg",
+      "label": 2,
+      "box": [
+        0.5134803921568627,
+        0.3229166666666667,
+        0.8443627450980392,
+        0.5735294117647058
+      ],
+      "whole": false,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/1159.jpg"
+    },
+    {
+      "image_id": 215,
+      "source": "batch_11/000014.jpg",
+      "url": "https://img.tacodataset.org/img/48694209992.jpg",
+      "label": 2,
+      "box": [
+        0.14546781798245614,
+        0.43890474999999995,
+        0.8987573464912281,
+        0.719357175
+      ],
+      "whole": false,
+      "license": "CC",
+      "split": "train",
+      "path": "data/taco/images/215.jpg"
+    },
+    {
+      "image_id": 210,
+      "source": "batch_11/000009.jpg",
+      "url": "https://img.tacodataset.org/img/48694211022.jpg",
+      "label": 2,
+      "box": [
+        0.40844298245614036,
+        0.61125,
+        0.8887061403508771,
+        0.8145
+      ],
+      "whole": false,
+      "license": "CC",
+      "split": "train",
+      "path": "data/taco/images/210.jpg"
+    },
+    {
+      "image_id": 81,
+      "source": "batch_1/000102.JPG",
+      "url": "https://img.tacodataset.org/img/47803367282.jpg",
+      "label": 2,
+      "box": [
+        0.33169934640522875,
+        0.3587622549019608,
+        0.8235294117647058,
+        0.6115196078431373
+      ],
+      "whole": true,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/81.jpg"
+    },
+    {
+      "image_id": 201,
+      "source": "batch_11/000000.jpg",
+      "url": "https://img.tacodataset.org/img/48694212567.jpg",
+      "label": 2,
+      "box": [
+        0.33225,
+        0.3470394736842105,
+        0.7665,
+        0.5115131578947368
+      ],
+      "whole": false,
+      "license": "CC",
+      "split": "train",
+      "path": "data/taco/images/201.jpg"
+    },
+    {
+      "image_id": 820,
+      "source": "batch_3/IMG_4874.JPG",
+      "url": "https://img.tacodataset.org/img/40889157373.jpg",
+      "label": 2,
+      "box": [
+        0.10130718954248366,
+        0.4319852941176471,
+        0.994281045751634,
+        0.9298406862745098
+      ],
+      "whole": false,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/820.jpg"
+    },
+    {
+      "image_id": 213,
+      "source": "batch_11/000012.jpg",
+      "url": "https://img.tacodataset.org/img/48693696003.jpg",
+      "label": 2,
+      "box": [
+        0.0,
+        0.33475,
+        0.9616228070175439,
+        0.8085
+      ],
+      "whole": true,
+      "license": "CC",
+      "split": "train",
+      "path": "data/taco/images/213.jpg"
+    },
+    {
+      "image_id": 1171,
+      "source": "batch_6/000002.JPG",
+      "url": "https://img.tacodataset.org/img/47856271681.jpg",
+      "label": 2,
+      "box": [
+        0.42432598039215685,
+        0.4297385620915033,
+        0.7699142156862745,
+        0.6466503267973857
+      ],
+      "whole": true,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/1171.jpg"
+    },
+    {
+      "image_id": 1119,
+      "source": "batch_6/000059.JPG",
+      "url": "https://img.tacodataset.org/img/47066782704.jpg",
+      "label": 2,
+      "box": [
+        0.35784313725490197,
+        0.3084150326797386,
+        0.5370710784313726,
+        0.7593954248366013
+      ],
+      "whole": true,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/1119.jpg"
+    },
+    {
+      "image_id": 211,
+      "source": "batch_11/000010.jpg",
+      "url": "https://img.tacodataset.org/img/48693696308.jpg",
+      "label": 2,
+      "box": [
+        0.10910087719298246,
+        0.36925,
+        0.5729166666666666,
+        0.551
+      ],
+      "whole": true,
+      "license": "CC",
+      "split": "train",
+      "path": "data/taco/images/211.jpg"
+    },
+    {
+      "image_id": 689,
+      "source": "batch_2/000005.JPG",
+      "url": "https://img.tacodataset.org/img/32911552327.jpg",
+      "label": 2,
+      "box": [
+        0.008986928104575163,
+        0.4794730392156863,
+        0.42320261437908496,
+        0.9724264705882353
+      ],
+      "whole": false,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/689.jpg"
+    },
+    {
+      "image_id": 1121,
+      "source": "batch_6/000056.JPG",
+      "url": "https://img.tacodataset.org/img/47066783694.jpg",
+      "label": 2,
+      "box": [
+        0.35263480392156865,
+        0.49264705882352944,
+        0.5640318627450981,
+        0.8026960784313726
+      ],
+      "whole": false,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/1121.jpg"
+    },
+    {
+      "image_id": 821,
+      "source": "batch_3/IMG_4875.JPG",
+      "url": "https://img.tacodataset.org/img/40889158193.jpg",
+      "label": 2,
+      "box": [
+        0.06954656862745098,
+        0.16258169934640523,
+        0.7377450980392157,
+        0.9983660130718954
+      ],
+      "whole": true,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/821.jpg"
+    },
+    {
+      "image_id": 214,
+      "source": "batch_11/000013.jpg",
+      "url": "https://img.tacodataset.org/img/48693695908.jpg",
+      "label": 2,
+      "box": [
+        0.18914473684210525,
+        0.00025,
+        0.9972587719298246,
+        0.8115
+      ],
+      "whole": true,
+      "license": "CC",
+      "split": "train",
+      "path": "data/taco/images/214.jpg"
+    },
+    {
+      "image_id": 869,
+      "source": "batch_3/IMG_5063.JPG",
+      "url": "https://img.tacodataset.org/img/47803646592.jpg",
+      "label": 2,
+      "box": [
+        0.17738970588235295,
+        0.34558823529411764,
+        0.6669730392156863,
+        0.9162581699346405
+      ],
+      "whole": false,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/869.jpg"
+    },
+    {
+      "image_id": 205,
+      "source": "batch_11/000004.jpg",
+      "url": "https://img.tacodataset.org/img/48693697238.jpg",
+      "label": 2,
+      "box": [
+        0.6173245614035088,
+        0.34075,
+        0.9989035087719298,
+        0.635
+      ],
+      "whole": false,
+      "license": "CC",
+      "split": "train",
+      "path": "data/taco/images/205.jpg"
+    },
+    {
+      "image_id": 787,
+      "source": "batch_3/IMG_5002.JPG",
+      "url": "https://img.tacodataset.org/img/47855757651.jpg",
+      "label": 2,
+      "box": [
+        0.010212418300653595,
+        0.13602941176470587,
+        0.863562091503268,
+        0.7855392156862745
+      ],
+      "whole": false,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/787.jpg"
+    },
+    {
+      "image_id": 1165,
+      "source": "batch_6/000009.JPG",
+      "url": "https://img.tacodataset.org/img/47066807424.jpg",
+      "label": 2,
+      "box": [
+        0.2346813725490196,
+        0.2332516339869281,
+        0.6792279411764706,
+        0.6809640522875817
+      ],
+      "whole": true,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/1165.jpg"
+    },
+    {
+      "image_id": 49,
+      "source": "batch_1/000067.JPG",
+      "url": "https://img.tacodataset.org/img/32911405727.jpg",
+      "label": 2,
+      "box": [
+        0.012663398692810458,
+        0.05943627450980392,
+        0.7071078431372549,
+        0.7049632352941176
+      ],
+      "whole": true,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/49.jpg"
+    },
+    {
+      "image_id": 53,
+      "source": "batch_1/000071.JPG",
+      "url": "https://img.tacodataset.org/img/46939264125.jpg",
+      "label": 2,
+      "box": [
+        0.41830065359477125,
+        0.42800245098039214,
+        0.6454248366013072,
+        0.609375
+      ],
+      "whole": true,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/53.jpg"
+    },
+    {
+      "image_id": 1104,
+      "source": "batch_6/000075.JPG",
+      "url": "https://img.tacodataset.org/img/32912101467.jpg",
+      "label": 2,
+      "box": [
+        0.20261437908496732,
+        0.49019607843137253,
+        0.49550653594771243,
+        0.8079044117647058
+      ],
+      "whole": true,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/1104.jpg"
+    },
+    {
+      "image_id": 746,
+      "source": "batch_2/000069.JPG",
+      "url": "https://img.tacodataset.org/img/32911591877.jpg",
+      "label": 2,
+      "box": [
+        0.32996323529411764,
+        0.4513888888888889,
+        0.5441176470588235,
+        0.7005718954248366
+      ],
+      "whole": true,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/746.jpg"
+    },
+    {
+      "image_id": 89,
+      "source": "batch_1/000115.JPG",
+      "url": "https://img.tacodataset.org/img/47855540001.jpg",
+      "label": 2,
+      "box": [
+        0.46660539215686275,
+        0.431781045751634,
+        0.6393995098039216,
+        0.6519607843137255
+      ],
+      "whole": false,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/89.jpg"
+    },
+    {
+      "image_id": 70,
+      "source": "batch_1/000092.JPG",
+      "url": "https://img.tacodataset.org/img/40888908063.jpg",
+      "label": 2,
+      "box": [
+        0.11315359477124183,
+        0.21017156862745098,
+        0.5759803921568627,
+        0.5772058823529411
+      ],
+      "whole": false,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/70.jpg"
+    },
+    {
+      "image_id": 100,
+      "source": "batch_1/000129.JPG",
+      "url": "https://img.tacodataset.org/img/47803377832.jpg",
+      "label": 2,
+      "box": [
+        0.0,
+        0.3489583333333333,
+        0.9779411764705882,
+        0.9503676470588235
+      ],
+      "whole": false,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/100.jpg"
+    },
+    {
+      "image_id": 217,
+      "source": "batch_11/000016.jpg",
+      "url": "https://img.tacodataset.org/img/48694035346.jpg",
+      "label": 2,
+      "box": [
+        0.1445,
+        0.12116228070175439,
+        0.42725,
+        0.5526315789473685
+      ],
+      "whole": false,
+      "license": "CC",
+      "split": "train",
+      "path": "data/taco/images/217.jpg"
+    },
+    {
+      "image_id": 796,
+      "source": "batch_3/IMG_5045.JPG",
+      "url": "https://img.tacodataset.org/img/47855760881.jpg",
+      "label": 2,
+      "box": [
+        0.47671568627450983,
+        0.42769607843137253,
+        0.9485294117647058,
+        0.7760416666666666
+      ],
+      "whole": false,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/796.jpg"
+    },
+    {
+      "image_id": 204,
+      "source": "batch_11/000003.jpg",
+      "url": "https://img.tacodataset.org/img/48694037636.jpg",
+      "label": 2,
+      "box": [
+        0.10635964912280702,
+        0.4185,
+        0.9462719298245614,
+        0.80375
+      ],
+      "whole": true,
+      "license": "CC",
+      "split": "train",
+      "path": "data/taco/images/204.jpg"
+    },
+    {
+      "image_id": 1,
+      "source": "batch_1/000008.jpg",
+      "url": "https://img.tacodataset.org/img/47803331152.jpg",
+      "label": 2,
+      "box": [
+        0.0006506180871828237,
+        0.2230356271351879,
+        0.9303838646714379,
+        0.9643728648121035
+      ],
+      "whole": true,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/1.jpg"
+    },
+    {
+      "image_id": 212,
+      "source": "batch_11/000011.jpg",
+      "url": "https://img.tacodataset.org/img/48694210407.jpg",
+      "label": 2,
+      "box": [
+        0.17434210526315788,
+        0.3270119,
+        0.8185307017543859,
+        0.6090118999999999
+      ],
+      "whole": true,
+      "license": "CC",
+      "split": "train",
+      "path": "data/taco/images/212.jpg"
+    },
+    {
+      "image_id": 802,
+      "source": "batch_3/IMG_5052.JPG",
+      "url": "https://img.tacodataset.org/img/47855767551.jpg",
+      "label": 2,
+      "box": [
+        0.5465686274509803,
+        0.3431372549019608,
+        0.8308823529411765,
+        0.7613357843137255
+      ],
+      "whole": true,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/802.jpg"
+    },
+    {
+      "image_id": 1239,
+      "source": "batch_7/000078.JPG",
+      "url": "https://img.tacodataset.org/img/32912184137.jpg",
+      "label": 2,
+      "box": [
+        0.002042483660130719,
+        0.4427083333333333,
+        0.41625816993464054,
+        0.7625612745098039
+      ],
+      "whole": false,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/1239.jpg"
+    },
+    {
+      "image_id": 795,
+      "source": "batch_3/IMG_5044.JPG",
+      "url": "https://img.tacodataset.org/img/32911652517.jpg",
+      "label": 2,
+      "box": [
+        0.46200980392156865,
+        0.649203431372549,
+        0.7099673202614379,
+        0.9362745098039216
+      ],
+      "whole": true,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/795.jpg"
+    },
+    {
+      "image_id": 1105,
+      "source": "batch_6/000074.JPG",
+      "url": "https://img.tacodataset.org/img/46939966745.jpg",
+      "label": 2,
+      "box": [
+        0.13970588235294118,
+        0.2769607843137255,
+        0.4169730392156863,
+        0.497140522875817
+      ],
+      "whole": false,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/1105.jpg"
+    },
+    {
+      "image_id": 206,
+      "source": "batch_11/000005.jpg",
+      "url": "https://img.tacodataset.org/img/48694037361.jpg",
+      "label": 2,
+      "box": [
+        0.0010964912280701754,
+        0.30175,
+        0.9007675438596491,
+        0.715
+      ],
+      "whole": false,
+      "license": "CC",
+      "split": "train",
+      "path": "data/taco/images/206.jpg"
+    },
+    {
+      "image_id": 1117,
+      "source": "batch_6/000061.JPG",
+      "url": "https://img.tacodataset.org/img/32912105857.jpg",
+      "label": 2,
+      "box": [
+        0.33251633986928103,
+        0.22303921568627452,
+        0.9117647058823529,
+        0.44424019607843135
+      ],
+      "whole": true,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/1117.jpg"
+    },
+    {
+      "image_id": 48,
+      "source": "batch_1/000066.JPG",
+      "url": "https://img.tacodataset.org/img/47066073914.jpg",
+      "label": 2,
+      "box": [
+        0.12653186274509803,
+        0.45751633986928103,
+        0.47671568627450983,
+        0.8341503267973857
+      ],
+      "whole": true,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/48.jpg"
+    },
+    {
+      "image_id": 1151,
+      "source": "batch_6/000025.JPG",
+      "url": "https://img.tacodataset.org/img/40889633543.jpg",
+      "label": 2,
+      "box": [
+        0.43045343137254904,
+        0.36519607843137253,
+        0.821078431372549,
+        0.8480392156862745
+      ],
+      "whole": true,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/1151.jpg"
+    },
+    {
+      "image_id": 870,
+      "source": "batch_3/IMG_5064.JPG",
+      "url": "https://img.tacodataset.org/img/32911713097.jpg",
+      "label": 2,
+      "box": [
+        0.43167892156862747,
+        0.44362745098039214,
+        0.8560049019607843,
+        0.7973856209150327
+      ],
+      "whole": false,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/870.jpg"
+    },
+    {
+      "image_id": 209,
+      "source": "batch_11/000008.jpg",
+      "url": "https://img.tacodataset.org/img/48694211097.jpg",
+      "label": 2,
+      "box": [
+        0.0,
+        0.0,
+        0.9931506849315069,
+        0.9484375
+      ],
+      "whole": false,
+      "license": "CC",
+      "split": "train",
+      "path": "data/taco/images/209.jpg"
+    },
+    {
+      "image_id": 1160,
+      "source": "batch_6/000015.JPG",
+      "url": "https://img.tacodataset.org/img/40889638173.jpg",
+      "label": 4,
+      "box": [
+        0.5914742451154529,
+        0.620501138952164,
+        0.7651865008880995,
+        0.8227790432801823
+      ],
+      "whole": false,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/1160.jpg"
+    },
+    {
+      "image_id": 0,
+      "source": "batch_1/000006.jpg",
+      "url": "https://img.tacodataset.org/img/33978196618.jpg",
+      "label": 4,
+      "box": [
+        0.33636955107351985,
+        0.061981454367984384,
+        0.627195836044242,
+        0.7071742313323572
+      ],
+      "whole": true,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/0.jpg"
+    },
+    {
+      "image_id": 706,
+      "source": "batch_2/000024.JPG",
+      "url": "https://img.tacodataset.org/img/32911562237.jpg",
+      "label": 4,
+      "box": [
+        0.5473856209150327,
+        0.0508578431372549,
+        0.7933006535947712,
+        0.727328431372549
+      ],
+      "whole": true,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/706.jpg"
+    },
+    {
+      "image_id": 793,
+      "source": "batch_3/IMG_5042.JPG",
+      "url": "https://img.tacodataset.org/img/47855759571.jpg",
+      "label": 4,
+      "box": [
+        0.5902777777777778,
+        0.32107843137254904,
+        0.7769607843137255,
+        0.6611519607843137
+      ],
+      "whole": true,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/793.jpg"
+    },
+    {
+      "image_id": 839,
+      "source": "batch_3/IMG_4914.JPG",
+      "url": "https://img.tacodataset.org/img/40889179093.jpg",
+      "label": 4,
+      "box": [
+        0.016748366013071895,
+        0.23743872549019607,
+        0.40808823529411764,
+        0.5413602941176471
+      ],
+      "whole": false,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/839.jpg"
+    },
+    {
+      "image_id": 12,
+      "source": "batch_1/000048.jpg",
+      "url": "https://img.tacodataset.org/img/47803337262.jpg",
+      "label": 4,
+      "box": [
+        0.10297706198145437,
+        0.0006506180871828237,
+        0.3064909712054661,
+        0.9225764476252439
+      ],
+      "whole": false,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/12.jpg"
+    },
+    {
+      "image_id": 39,
+      "source": "batch_1/000016.jpg",
+      "url": "https://img.tacodataset.org/img/47855510951.jpg",
+      "label": 4,
+      "box": [
+        0.38581652569941444,
+        0.4558321132259639,
+        0.6668835393623943,
+        0.5719863347974622
+      ],
+      "whole": true,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/39.jpg"
+    },
+    {
+      "image_id": 80,
+      "source": "batch_1/000101.JPG",
+      "url": "https://img.tacodataset.org/img/33978228348.jpg",
+      "label": 4,
+      "box": [
+        0.17933006535947713,
+        0.3232230392156863,
+        0.7696078431372549,
+        0.7438725490196079
+      ],
+      "whole": false,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/80.jpg"
+    },
+    {
+      "image_id": 26,
+      "source": "batch_1/000022.jpg",
+      "url": "https://img.tacodataset.org/img/46939254875.jpg",
+      "label": 4,
+      "box": [
+        0.31576378721327475,
+        0.6720884840598569,
+        0.7159590043923866,
+        0.9167208848405985
+      ],
+      "whole": false,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/26.jpg"
+    },
+    {
+      "image_id": 67,
+      "source": "batch_1/000088.JPG",
+      "url": "https://img.tacodataset.org/img/47855527831.jpg",
+      "label": 4,
+      "box": [
+        0.6670751633986928,
+        0.3232230392156863,
+        0.9628267973856209,
+        0.6896446078431373
+      ],
+      "whole": false,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/67.jpg"
+    },
+    {
+      "image_id": 10,
+      "source": "batch_1/000012.jpg",
+      "url": "https://img.tacodataset.org/img/40888877173.jpg",
+      "label": 4,
+      "box": [
+        0.24658425504229017,
+        0.550024402147389,
+        0.5230969420949902,
+        0.7052220595412396
+      ],
+      "whole": true,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/10.jpg"
+    },
+    {
+      "image_id": 25,
+      "source": "batch_1/000021.jpg",
+      "url": "https://img.tacodataset.org/img/46939254645.jpg",
+      "label": 4,
+      "box": [
+        0.4158125915080527,
+        0.41509433962264153,
+        0.7510980966325037,
+        0.6044242029928432
+      ],
+      "whole": false,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/25.jpg"
+    },
+    {
+      "image_id": 19,
+      "source": "batch_1/000032.jpg",
+      "url": "https://img.tacodataset.org/img/32911398817.jpg",
+      "label": 5,
+      "box": [
+        0.3272608978529603,
+        0.3943387018057589,
+        0.6167859466493169,
+        0.5685700341630063
+      ],
+      "whole": true,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/19.jpg"
+    },
+    {
+      "image_id": 29,
+      "source": "batch_1/000027.jpg",
+      "url": "https://img.tacodataset.org/img/33978206868.jpg",
+      "label": 5,
+      "box": [
+        0.4346128822381262,
+        0.34992679355783307,
+        0.730644111906311,
+        0.6695949243533431
+      ],
+      "whole": true,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/29.jpg"
+    },
+    {
+      "image_id": 6,
+      "source": "batch_1/000055.jpg",
+      "url": "https://img.tacodataset.org/img/47803332212.jpg",
+      "label": 5,
+      "box": [
+        0.3350683148991542,
+        0.21425085407515862,
+        0.5673389720234222,
+        0.7632991703269888
+      ],
+      "whole": true,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/6.jpg"
+    },
+    {
+      "image_id": 800,
+      "source": "batch_3/IMG_5050.JPG",
+      "url": "https://img.tacodataset.org/img/47803604122.jpg",
+      "label": 5,
+      "box": [
+        0.36356209150326796,
+        0.20710784313725492,
+        0.5490196078431373,
+        0.7478553921568627
+      ],
+      "whole": false,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/800.jpg"
+    },
+    {
+      "image_id": 46,
+      "source": "batch_1/000038.jpg",
+      "url": "https://img.tacodataset.org/img/47855512471.jpg",
+      "label": 5,
+      "box": [
+        0.731088335773548,
+        0.41379310344827586,
+        0.928745729624207,
+        0.7241379310344828
+      ],
+      "whole": true,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/46.jpg"
+    },
+    {
+      "image_id": 21,
+      "source": "batch_1/000043.jpg",
+      "url": "https://img.tacodataset.org/img/47855508711.jpg",
+      "label": 5,
+      "box": [
+        0.29380185456320157,
+        0.18867924528301888,
+        0.7159590043923866,
+        0.8776837996096292
+      ],
+      "whole": false,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/21.jpg"
+    },
+    {
+      "image_id": 42,
+      "source": "batch_1/000029.jpg",
+      "url": "https://img.tacodataset.org/img/32911404057.jpg",
+      "label": 5,
+      "box": [
+        0.42420299284320107,
+        0.4265495363591996,
+        0.7007156798959011,
+        0.7628111273792094
+      ],
+      "whole": true,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/42.jpg"
+    },
+    {
+      "image_id": 4,
+      "source": "batch_1/000026.jpg",
+      "url": "https://img.tacodataset.org/img/33978199868.jpg",
+      "label": 5,
+      "box": [
+        0.36174365647365,
+        0.46071254270375794,
+        0.6805465191932336,
+        0.6246949731576379
+      ],
+      "whole": true,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/4.jpg"
+    },
+    {
+      "image_id": 68,
+      "source": "batch_1/000090.JPG",
+      "url": "https://img.tacodataset.org/img/46939272735.jpg",
+      "label": 5,
+      "box": [
+        0.24836601307189543,
+        0.13449754901960784,
+        0.6286764705882353,
+        0.4996936274509804
+      ],
+      "whole": false,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/68.jpg"
+    },
+    {
+      "image_id": 16,
+      "source": "batch_1/000060.jpg",
+      "url": "https://img.tacodataset.org/img/33978204438.jpg",
+      "label": 5,
+      "box": [
+        0.48796356538711777,
+        0.11908247925817472,
+        0.7495120364346128,
+        0.8350414836505613
+      ],
+      "whole": false,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/16.jpg"
+    },
+    {
+      "image_id": 45,
+      "source": "batch_1/000045.jpg",
+      "url": "https://img.tacodataset.org/img/32911404617.jpg",
+      "label": 5,
+      "box": [
+        0.5505124450951684,
+        0.21275211450878334,
+        0.7925817471937531,
+        0.6343526350032531
+      ],
+      "whole": true,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/45.jpg"
+    },
+    {
+      "image_id": 34,
+      "source": "batch_1/000050.jpg",
+      "url": "https://img.tacodataset.org/img/46939256875.jpg",
+      "label": 5,
+      "box": [
+        0.4176968119713728,
+        0.41678867740361153,
+        0.9596616785946649,
+        0.8091752074182528
+      ],
+      "whole": false,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/34.jpg"
+    },
+    {
+      "image_id": 32,
+      "source": "batch_1/000031.jpg",
+      "url": "https://img.tacodataset.org/img/46939256375.jpg",
+      "label": 5,
+      "box": [
+        0.30579050097592714,
+        0.5075646656905808,
+        0.5744957709824333,
+        0.6642264519277696
+      ],
+      "whole": true,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/32.jpg"
+    },
+    {
+      "image_id": 1138,
+      "source": "batch_6/000039.JPG",
+      "url": "https://img.tacodataset.org/img/47804031902.jpg",
+      "label": 5,
+      "box": [
+        0.4880514705882353,
+        0.37336601307189543,
+        0.7769607843137255,
+        0.7267156862745098
+      ],
+      "whole": true,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/1138.jpg"
+    },
+    {
+      "image_id": 41,
+      "source": "batch_1/000025.jpg",
+      "url": "https://img.tacodataset.org/img/40888889263.jpg",
+      "label": 5,
+      "box": [
+        0.21014964216005205,
+        0.5148853099072719,
+        0.5270006506180872,
+        0.6866764275256223
+      ],
+      "whole": true,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/41.jpg"
+    },
+    {
+      "image_id": 44,
+      "source": "batch_1/000037.jpg",
+      "url": "https://img.tacodataset.org/img/32911404467.jpg",
+      "label": 5,
+      "box": [
+        0.24109321620302587,
+        0.3454782042940794,
+        0.4226451927769644,
+        0.6922576447625244
+      ],
+      "whole": true,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/44.jpg"
+    },
+    {
+      "image_id": 847,
+      "source": "batch_3/IMG_4926.JPG",
+      "url": "https://img.tacodataset.org/img/32911701247.jpg",
+      "label": 5,
+      "box": [
+        0.255718954248366,
+        0.3756127450980392,
+        0.7745098039215687,
+        0.8477328431372549
+      ],
+      "whole": true,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/847.jpg"
+    },
+    {
+      "image_id": 22,
+      "source": "batch_1/000049.jpg",
+      "url": "https://img.tacodataset.org/img/47066069044.jpg",
+      "label": 5,
+      "box": [
+        0.25959661678594664,
+        0.2449975597852611,
+        0.5738451528952505,
+        0.6066373840898
+      ],
+      "whole": true,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/22.jpg"
+    },
+    {
+      "image_id": 55,
+      "source": "batch_1/000073.JPG",
+      "url": "https://img.tacodataset.org/img/46939264945.jpg",
+      "label": 5,
+      "box": [
+        0.3839869281045752,
+        0.25643382352941174,
+        0.5849673202614379,
+        0.4742647058823529
+      ],
+      "whole": true,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/55.jpg"
+    },
+    {
+      "image_id": 20,
+      "source": "batch_1/000040.jpg",
+      "url": "https://img.tacodataset.org/img/47855508601.jpg",
+      "label": 5,
+      "box": [
+        0.7076622742801366,
+        0.24658425504229017,
+        0.9585163494387506,
+        0.6447625243981783
+      ],
+      "whole": true,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/20.jpg"
+    },
+    {
+      "image_id": 818,
+      "source": "batch_3/IMG_4868.JPG",
+      "url": "https://img.tacodataset.org/img/46939504865.jpg",
+      "label": 5,
+      "box": [
+        0.2908496732026144,
+        0.11121323529411764,
+        0.5735294117647058,
+        0.46262254901960786
+      ],
+      "whole": true,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/818.jpg"
+    },
+    {
+      "image_id": 69,
+      "source": "batch_1/000091.JPG",
+      "url": "https://img.tacodataset.org/img/32911419327.jpg",
+      "label": 5,
+      "box": [
+        0.7944240196078431,
+        0.37336601307189543,
+        0.9727328431372549,
+        0.5535130718954249
+      ],
+      "whole": false,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/69.jpg"
+    },
+    {
+      "image_id": 9,
+      "source": "batch_1/000007.jpg",
+      "url": "https://img.tacodataset.org/img/47855505601.jpg",
+      "label": 5,
+      "box": [
+        0.4749512036434613,
+        0.06149341142020498,
+        0.6538711776187378,
+        0.35871156661786235
+      ],
+      "whole": true,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/9.jpg"
+    },
+    {
+      "image_id": 82,
+      "source": "batch_1/000104.JPG",
+      "url": "https://img.tacodataset.org/img/47855536111.jpg",
+      "label": 5,
+      "box": [
+        0.22487745098039216,
+        0.5049019607843137,
+        0.5900735294117647,
+        0.9758986928104575
+      ],
+      "whole": false,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/82.jpg"
+    },
+    {
+      "image_id": 1253,
+      "source": "batch_7/000092.JPG",
+      "url": "https://img.tacodataset.org/img/32912196167.jpg",
+      "label": 5,
+      "box": [
+        0.32567401960784315,
+        0.42606209150326796,
+        0.4944852941176471,
+        0.6740196078431373
+      ],
+      "whole": false,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/1253.jpg"
+    },
+    {
+      "image_id": 715,
+      "source": "batch_2/000035.JPG",
+      "url": "https://img.tacodataset.org/img/40889054403.jpg",
+      "label": 5,
+      "box": [
+        0.1409313725490196,
+        0.5723039215686274,
+        0.5106209150326797,
+        0.772671568627451
+      ],
+      "whole": false,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/715.jpg"
+    },
+    {
+      "image_id": 24,
+      "source": "batch_1/000061.jpg",
+      "url": "https://img.tacodataset.org/img/47855509081.jpg",
+      "label": 5,
+      "box": [
+        0.1782693558880937,
+        0.3528550512445095,
+        0.6096291476903057,
+        0.7657393850658858
+      ],
+      "whole": true,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/24.jpg"
+    },
+    {
+      "image_id": 97,
+      "source": "batch_1/000124.JPG",
+      "url": "https://img.tacodataset.org/img/47066101104.jpg",
+      "label": 5,
+      "box": [
+        0.3300653594771242,
+        0.6246936274509803,
+        0.5788398692810458,
+        0.8440563725490197
+      ],
+      "whole": false,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/97.jpg"
+    },
+    {
+      "image_id": 58,
+      "source": "batch_1/000078.JPG",
+      "url": "https://img.tacodataset.org/img/32911411497.jpg",
+      "label": 6,
+      "box": [
+        0.17197712418300654,
+        0.3091299019607843,
+        0.7283496732026143,
+        0.9053308823529411
+      ],
+      "whole": true,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/58.jpg"
+    },
+    {
+      "image_id": 35,
+      "source": "batch_1/000059.jpg",
+      "url": "https://img.tacodataset.org/img/32911402747.jpg",
+      "label": 6,
+      "box": [
+        0.4840598568640208,
+        0.2689116642264519,
+        0.9993493819128172,
+        0.6481210346510493
+      ],
+      "whole": false,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/35.jpg"
+    },
+    {
+      "image_id": 754,
+      "source": "batch_2/000077.JPG",
+      "url": "https://img.tacodataset.org/img/46939449615.jpg",
+      "label": 6,
+      "box": [
+        0.12173202614379085,
+        0.1636029411764706,
+        0.6629901960784313,
+        0.7362132352941176
+      ],
+      "whole": true,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/754.jpg"
+    },
+    {
+      "image_id": 54,
+      "source": "batch_1/000072.JPG",
+      "url": "https://img.tacodataset.org/img/47066077624.jpg",
+      "label": 6,
+      "box": [
+        0.0004084967320261438,
+        0.4329044117647059,
+        0.3329248366013072,
+        0.7484681372549019
+      ],
+      "whole": false,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/54.jpg"
+    },
+    {
+      "image_id": 852,
+      "source": "batch_3/IMG_4939.JPG",
+      "url": "https://img.tacodataset.org/img/47855808451.jpg",
+      "label": 6,
+      "box": [
+        0.0,
+        0.28278186274509803,
+        0.8566176470588235,
+        0.9984681372549019
+      ],
+      "whole": false,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/852.jpg"
+    },
+    {
+      "image_id": 1184,
+      "source": "batch_7/000013.JPG",
+      "url": "https://img.tacodataset.org/img/47856291101.jpg",
+      "label": 6,
+      "box": [
+        0.5094975490196079,
+        0.3737745098039216,
+        0.7349877450980392,
+        0.5718954248366013
+      ],
+      "whole": true,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/1184.jpg"
+    },
+    {
+      "image_id": 1136,
+      "source": "batch_6/000041.JPG",
+      "url": "https://img.tacodataset.org/img/47066791774.jpg",
+      "label": 6,
+      "box": [
+        0.39920343137254904,
+        0.16748366013071894,
+        0.8060661764705882,
+        0.48161764705882354
+      ],
+      "whole": false,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/1136.jpg"
+    },
+    {
+      "image_id": 874,
+      "source": "batch_3/IMG_5068.JPG",
+      "url": "https://img.tacodataset.org/img/47855823771.jpg",
+      "label": 6,
+      "box": [
+        0.265625,
+        0.49060457516339867,
+        0.5621936274509803,
+        0.9464869281045751
+      ],
+      "whole": true,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/874.jpg"
+    },
+    {
+      "image_id": 1192,
+      "source": "batch_7/000021.JPG",
+      "url": "https://img.tacodataset.org/img/40889663323.jpg",
+      "label": 6,
+      "box": [
+        0.0,
+        0.7099673202614379,
+        0.15778186274509803,
+        0.9808006535947712
+      ],
+      "whole": true,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/1192.jpg"
+    },
+    {
+      "image_id": 850,
+      "source": "batch_3/IMG_4934.JPG",
+      "url": "https://img.tacodataset.org/img/33978469938.jpg",
+      "label": 6,
+      "box": [
+        0.042483660130718956,
+        0.16758578431372548,
+        0.8913398692810458,
+        0.725796568627451
+      ],
+      "whole": true,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/850.jpg"
+    },
+    {
+      "image_id": 1154,
+      "source": "batch_6/000022.JPG",
+      "url": "https://img.tacodataset.org/img/47066800644.jpg",
+      "label": 6,
+      "box": [
+        0.32598039215686275,
+        0.6430759803921569,
+        0.7406045751633987,
+        0.8661151960784313
+      ],
+      "whole": false,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/1154.jpg"
+    },
+    {
+      "image_id": 59,
+      "source": "batch_1/000079.JPG",
+      "url": "https://img.tacodataset.org/img/47803352692.jpg",
+      "label": 6,
+      "box": [
+        0.10498366013071896,
+        0.3336397058823529,
+        0.8043300653594772,
+        0.8792892156862745
+      ],
+      "whole": true,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/59.jpg"
+    },
+    {
+      "image_id": 5,
+      "source": "batch_1/000047.jpg",
+      "url": "https://img.tacodataset.org/img/33978200068.jpg",
+      "label": 7,
+      "box": [
+        0.09224011713030747,
+        0.4886141834743006,
+        0.8814055636896047,
+        0.8718282368249838
+      ],
+      "whole": false,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/5.jpg"
+    },
+    {
+      "image_id": 76,
+      "source": "batch_1/000098.JPG",
+      "url": "https://img.tacodataset.org/img/32911423797.jpg",
+      "label": 7,
+      "box": [
+        0.2332516339869281,
+        0.3017769607843137,
+        0.4158496732026144,
+        0.5511642156862745
+      ],
+      "whole": true,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/76.jpg"
+    },
+    {
+      "image_id": 73,
+      "source": "batch_1/000095.JPG",
+      "url": "https://img.tacodataset.org/img/46939275485.jpg",
+      "label": 7,
+      "box": [
+        0.25326797385620914,
+        0.3164828431372549,
+        0.9677287581699346,
+        0.9785539215686274
+      ],
+      "whole": false,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/73.jpg"
+    },
+    {
+      "image_id": 1131,
+      "source": "batch_6/000047.JPG",
+      "url": "https://img.tacodataset.org/img/47066789274.jpg",
+      "label": 7,
+      "box": [
+        0.28829656862745096,
+        0.3263888888888889,
+        0.5674019607843137,
+        0.5755718954248366
+      ],
+      "whole": true,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/1131.jpg"
+    },
+    {
+      "image_id": 43,
+      "source": "batch_1/000035.jpg",
+      "url": "https://img.tacodataset.org/img/46939259475.jpg",
+      "label": 7,
+      "box": [
+        0.5250487963565387,
+        0.050268423621278674,
+        0.9869876382563435,
+        0.8374816983894583
+      ],
+      "whole": false,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/43.jpg"
+    },
+    {
+      "image_id": 840,
+      "source": "batch_3/IMG_4915.JPG",
+      "url": "https://img.tacodataset.org/img/47855803151.jpg",
+      "label": 7,
+      "box": [
+        0.3161764705882353,
+        0.01011029411764706,
+        0.6993464052287581,
+        0.9197303921568627
+      ],
+      "whole": true,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/840.jpg"
+    },
+    {
+      "image_id": 703,
+      "source": "batch_2/000021.JPG",
+      "url": "https://img.tacodataset.org/img/40889047743.jpg",
+      "label": 7,
+      "box": [
+        0.30514705882352944,
+        0.2496936274509804,
+        0.6527777777777778,
+        0.5759803921568627
+      ],
+      "whole": false,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/703.jpg"
+    },
+    {
+      "image_id": 1259,
+      "source": "batch_7/000098.JPG",
+      "url": "https://img.tacodataset.org/img/46940064055.jpg",
+      "label": 7,
+      "box": [
+        0.33792892156862747,
+        0.5200163398692811,
+        0.6844362745098039,
+        0.6842320261437909
+      ],
+      "whole": true,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/1259.jpg"
+    },
+    {
+      "image_id": 1198,
+      "source": "batch_7/000030.JPG",
+      "url": "https://img.tacodataset.org/img/46940032185.jpg",
+      "label": 7,
+      "box": [
+        0.13020833333333334,
+        0.44140625,
+        0.6041666666666666,
+        0.890625
+      ],
+      "whole": true,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/1198.jpg"
+    },
+    {
+      "image_id": 75,
+      "source": "batch_1/000062.JPG",
+      "url": "https://img.tacodataset.org/img/40888909583.jpg",
+      "label": 7,
+      "box": [
+        0.21405228758169934,
+        0.45557598039215685,
+        0.5727124183006536,
+        0.8927696078431373
+      ],
+      "whole": false,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/75.jpg"
+    },
+    {
+      "image_id": 3,
+      "source": "batch_1/000019.jpg",
+      "url": "https://img.tacodataset.org/img/47803331492.jpg",
+      "label": 7,
+      "box": [
+        0.10200097608589556,
+        0.5985686402081978,
+        0.3235724743777452,
+        0.9642160052049447
+      ],
+      "whole": false,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/3.jpg"
+    },
+    {
+      "image_id": 83,
+      "source": "batch_1/000105.JPG",
+      "url": "https://img.tacodataset.org/img/46939279105.jpg",
+      "label": 7,
+      "box": [
+        0.3464052287581699,
+        0.34099264705882354,
+        0.7953431372549019,
+        0.7754289215686274
+      ],
+      "whole": true,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/83.jpg"
+    },
+    {
+      "image_id": 872,
+      "source": "batch_3/IMG_5066.JPG",
+      "url": "https://img.tacodataset.org/img/47066377524.jpg",
+      "label": 7,
+      "box": [
+        0.5392156862745098,
+        0.5487132352941176,
+        0.7908496732026143,
+        0.6881127450980392
+      ],
+      "whole": false,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/872.jpg"
+    },
+    {
+      "image_id": 1123,
+      "source": "batch_6/000057.JPG",
+      "url": "https://img.tacodataset.org/img/32912110127.jpg",
+      "label": 7,
+      "box": [
+        0.6587009803921569,
+        0.056372549019607844,
+        0.9185049019607843,
+        0.3602941176470588
+      ],
+      "whole": false,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/1123.jpg"
+    },
+    {
+      "image_id": 784,
+      "source": "batch_3/IMG_4996.JPG",
+      "url": "https://img.tacodataset.org/img/47066307114.jpg",
+      "label": 7,
+      "box": [
+        0.44893790849673204,
+        0.44056372549019607,
+        0.5702614379084967,
+        0.6893382352941176
+      ],
+      "whole": false,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/784.jpg"
+    },
+    {
+      "image_id": 894,
+      "source": "batch_4/000018.JPG",
+      "url": "https://img.tacodataset.org/img/47856081041.jpg",
+      "label": 7,
+      "box": [
+        0.20955882352941177,
+        0.39828431372549017,
+        0.4709967320261438,
+        0.5465686274509803
+      ],
+      "whole": true,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/894.jpg"
+    },
+    {
+      "image_id": 753,
+      "source": "batch_2/000076.JPG",
+      "url": "https://img.tacodataset.org/img/40889079733.jpg",
+      "label": 7,
+      "box": [
+        0.49019607843137253,
+        0.37745098039215685,
+        0.6338848039215687,
+        0.6156045751633987
+      ],
+      "whole": true,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/753.jpg"
+    },
+    {
+      "image_id": 889,
+      "source": "batch_4/000012.JPG",
+      "url": "https://img.tacodataset.org/img/40889459383.jpg",
+      "label": 7,
+      "box": [
+        0.3598856209150327,
+        0.44607843137254904,
+        0.6699346405228758,
+        0.6078431372549019
+      ],
+      "whole": true,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/889.jpg"
+    },
+    {
+      "image_id": 14,
+      "source": "batch_1/000056.jpg",
+      "url": "https://img.tacodataset.org/img/47803337932.jpg",
+      "label": 7,
+      "box": [
+        0.27260897852960314,
+        0.003904343582235237,
+        0.7364996746909565,
+        0.9087359687652513
+      ],
+      "whole": true,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/14.jpg"
+    },
+    {
+      "image_id": 1290,
+      "source": "batch_7/000133.JPG",
+      "url": "https://img.tacodataset.org/img/47856358351.jpg",
+      "label": 7,
+      "box": [
+        0.4329044117647059,
+        0.22712418300653595,
+        0.6332720588235294,
+        0.44730392156862747
+      ],
+      "whole": true,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/1290.jpg"
+    },
+    {
+      "image_id": 1077,
+      "source": "batch_6/000104.JPG",
+      "url": "https://img.tacodataset.org/img/40889605713.jpg",
+      "label": 7,
+      "box": [
+        0.20465686274509803,
+        0.27818627450980393,
+        0.46200980392156865,
+        0.45618872549019607
+      ],
+      "whole": false,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/1077.jpg"
+    },
+    {
+      "image_id": 1172,
+      "source": "batch_6/000001.JPG",
+      "url": "https://img.tacodataset.org/img/33978961128.jpg",
+      "label": 7,
+      "box": [
+        0.2455065359477124,
+        0.3382352941176471,
+        0.6744281045751634,
+        0.5189950980392157
+      ],
+      "whole": false,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/1172.jpg"
+    },
+    {
+      "image_id": 219,
+      "source": "batch_11/000018.jpg",
+      "url": "https://img.tacodataset.org/img/48694208702.jpg",
+      "label": 7,
+      "box": [
+        0.17,
+        0.5367324561403509,
+        0.309,
+        0.9671052631578947
+      ],
+      "whole": true,
+      "license": "CC",
+      "split": "train",
+      "path": "data/taco/images/219.jpg"
+    },
+    {
+      "image_id": 819,
+      "source": "batch_3/IMG_4869.JPG",
+      "url": "https://img.tacodataset.org/img/32911670987.jpg",
+      "label": 7,
+      "box": [
+        0.14338235294117646,
+        0.2821691176470588,
+        0.8709150326797386,
+        0.772671568627451
+      ],
+      "whole": true,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/819.jpg"
+    },
+    {
+      "image_id": 794,
+      "source": "batch_3/IMG_5043.JPG",
+      "url": "https://img.tacodataset.org/img/47066317984.jpg",
+      "label": 7,
+      "box": [
+        0.15645424836601307,
+        0.38357843137254904,
+        0.7352941176470589,
+        0.5977328431372549
+      ],
+      "whole": true,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/794.jpg"
+    },
+    {
+      "image_id": 1134,
+      "source": "batch_6/000043.JPG",
+      "url": "https://img.tacodataset.org/img/46939979195.jpg",
+      "label": 7,
+      "box": [
+        0.3391544117647059,
+        0.2863562091503268,
+        0.4724264705882353,
+        0.5187908496732027
+      ],
+      "whole": true,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/1134.jpg"
+    },
+    {
+      "image_id": 686,
+      "source": "batch_2/000000.JPG",
+      "url": "https://img.tacodataset.org/img/32911550337.jpg",
+      "label": 7,
+      "box": [
+        0.3929738562091503,
+        0.35294117647058826,
+        0.5882352941176471,
+        0.6197916666666666
+      ],
+      "whole": true,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/686.jpg"
+    },
+    {
+      "image_id": 857,
+      "source": "batch_3/IMG_4965.JPG",
+      "url": "https://img.tacodataset.org/img/47855812501.jpg",
+      "label": 7,
+      "box": [
+        0.6056985294117647,
+        0.43586601307189543,
+        0.7830882352941176,
+        0.6821895424836601
+      ],
+      "whole": true,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/857.jpg"
+    },
+    {
+      "image_id": 7,
+      "source": "batch_1/000001.jpg",
+      "url": "https://img.tacodataset.org/img/33978202498.jpg",
+      "label": 7,
+      "box": [
+        0.4031234748657882,
+        0.4840598568640208,
+        0.6295754026354319,
+        0.6174365647364997
+      ],
+      "whole": true,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/7.jpg"
+    },
+    {
+      "image_id": 1197,
+      "source": "batch_7/000029.JPG",
+      "url": "https://img.tacodataset.org/img/47066835484.jpg",
+      "label": 7,
+      "box": [
+        0.25245098039215685,
+        0.48223039215686275,
+        0.5473856209150327,
+        0.6317401960784313
+      ],
+      "whole": false,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/1197.jpg"
+    },
+    {
+      "image_id": 928,
+      "source": "batch_4/000058.JPG",
+      "url": "https://img.tacodataset.org/img/40889487943.jpg",
+      "label": 7,
+      "box": [
+        0.6090686274509803,
+        0.48080065359477125,
+        0.8848039215686274,
+        0.6348039215686274
+      ],
+      "whole": true,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/928.jpg"
+    },
+    {
+      "image_id": 1164,
+      "source": "batch_6/000010.JPG",
+      "url": "https://img.tacodataset.org/img/33978955328.jpg",
+      "label": 7,
+      "box": [
+        0.2181372549019608,
+        0.48743872549019607,
+        0.4673202614379085,
+        0.7095588235294118
+      ],
+      "whole": true,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/1164.jpg"
+    },
+    {
+      "image_id": 823,
+      "source": "batch_3/IMG_4877.JPG",
+      "url": "https://img.tacodataset.org/img/47066341784.jpg",
+      "label": 7,
+      "box": [
+        0.11683006535947713,
+        0.17003676470588236,
+        0.9383169934640523,
+        0.8109681372549019
+      ],
+      "whole": false,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/823.jpg"
+    },
+    {
+      "image_id": 924,
+      "source": "batch_4/000054.JPG",
+      "url": "https://img.tacodataset.org/img/47066650354.jpg",
+      "label": 7,
+      "box": [
+        0.16023284313725492,
+        0.3946078431372549,
+        0.3391544117647059,
+        0.6454248366013072
+      ],
+      "whole": false,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/924.jpg"
+    },
+    {
+      "image_id": 915,
+      "source": "batch_4/000045.JPG",
+      "url": "https://img.tacodataset.org/img/47066643124.jpg",
+      "label": 7,
+      "box": [
+        0.18474264705882354,
+        0.670751633986928,
+        0.39368872549019607,
+        0.9995915032679739
+      ],
+      "whole": true,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/915.jpg"
+    },
+    {
+      "image_id": 935,
+      "source": "batch_4/000065.JPG",
+      "url": "https://img.tacodataset.org/img/40889493183.jpg",
+      "label": 7,
+      "box": [
+        0.2693014705882353,
+        0.5853758169934641,
+        0.8599877450980392,
+        0.7410130718954249
+      ],
+      "whole": true,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/935.jpg"
+    },
+    {
+      "image_id": 1129,
+      "source": "batch_6/000049.JPG",
+      "url": "https://img.tacodataset.org/img/47804027952.jpg",
+      "label": 7,
+      "box": [
+        0.3415032679738562,
+        0.40778186274509803,
+        0.6388888888888888,
+        0.6470588235294118
+      ],
+      "whole": true,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/1129.jpg"
+    },
+    {
+      "image_id": 1155,
+      "source": "batch_6/000021.JPG",
+      "url": "https://img.tacodataset.org/img/47804038842.jpg",
+      "label": 7,
+      "box": [
+        0.2798202614379085,
+        0.12928921568627452,
+        0.6094771241830066,
+        0.49387254901960786
+      ],
+      "whole": true,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/1155.jpg"
+    },
+    {
+      "image_id": 910,
+      "source": "batch_4/000039.JPG",
+      "url": "https://img.tacodataset.org/img/47803899312.jpg",
+      "label": 7,
+      "box": [
+        0.19117647058823528,
+        0.4440359477124183,
+        0.43504901960784315,
+        0.5821078431372549
+      ],
+      "whole": true,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/910.jpg"
+    },
+    {
+      "image_id": 693,
+      "source": "batch_2/000009.JPG",
+      "url": "https://img.tacodataset.org/img/40889040103.jpg",
+      "label": 7,
+      "box": [
+        0.23529411764705882,
+        0.14430147058823528,
+        0.545751633986928,
+        0.3449754901960784
+      ],
+      "whole": false,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/693.jpg"
+    },
+    {
+      "image_id": 833,
+      "source": "batch_3/IMG_4898.JPG",
+      "url": "https://img.tacodataset.org/img/47855798821.jpg",
+      "label": 7,
+      "box": [
+        0.44730392156862747,
+        0.6776960784313726,
+        0.795751633986928,
+        0.9485294117647058
+      ],
+      "whole": true,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/833.jpg"
+    },
+    {
+      "image_id": 1150,
+      "source": "batch_6/000026.JPG",
+      "url": "https://img.tacodataset.org/img/47066799004.jpg",
+      "label": 7,
+      "box": [
+        0.2863562091503268,
+        0.4424019607843137,
+        0.6111111111111112,
+        0.7055759803921569
+      ],
+      "whole": true,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/1150.jpg"
+    },
+    {
+      "image_id": 1120,
+      "source": "batch_6/000058.JPG",
+      "url": "https://img.tacodataset.org/img/33978931598.jpg",
+      "label": 7,
+      "box": [
+        0.3533496732026144,
+        0.19883578431372548,
+        0.6376633986928104,
+        0.4166666666666667
+      ],
+      "whole": true,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/1120.jpg"
+    },
+    {
+      "image_id": 2,
+      "source": "batch_1/000010.jpg",
+      "url": "https://img.tacodataset.org/img/40888872753.jpg",
+      "label": 7,
+      "box": [
+        0.41119063109954457,
+        0.4816983894582723,
+        0.7364996746909565,
+        0.6642264519277696
+      ],
+      "whole": true,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/2.jpg"
+    },
+    {
+      "image_id": 838,
+      "source": "batch_3/IMG_4913.JPG",
+      "url": "https://img.tacodataset.org/img/47066361194.jpg",
+      "label": 7,
+      "box": [
+        0.19934640522875818,
+        0.1400122549019608,
+        0.9162581699346405,
+        0.47518382352941174
+      ],
+      "whole": false,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/838.jpg"
+    },
+    {
+      "image_id": 84,
+      "source": "batch_1/000106.JPG",
+      "url": "https://img.tacodataset.org/img/40888914233.jpg",
+      "label": 7,
+      "box": [
+        0.829248366013072,
+        0.7469362745098039,
+        0.9995915032679739,
+        0.9414828431372549
+      ],
+      "whole": false,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/84.jpg"
+    },
+    {
+      "image_id": 1209,
+      "source": "batch_7/000044.JPG",
+      "url": "https://img.tacodataset.org/img/47804067422.jpg",
+      "label": 7,
+      "box": [
+        0.0016339869281045752,
+        0.7775735294117647,
+        0.21691176470588236,
+        0.9181985294117647
+      ],
+      "whole": true,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/1209.jpg"
+    },
+    {
+      "image_id": 817,
+      "source": "batch_3/IMG_4865.JPG",
+      "url": "https://img.tacodataset.org/img/40889152403.jpg",
+      "label": 7,
+      "box": [
+        0.17687908496732027,
+        0.20189950980392157,
+        0.6360294117647058,
+        0.5134803921568627
+      ],
+      "whole": false,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/817.jpg"
+    },
+    {
+      "image_id": 1269,
+      "source": "batch_7/000110.JPG",
+      "url": "https://img.tacodataset.org/img/47856348611.jpg",
+      "label": 7,
+      "box": [
+        0.2708333333333333,
+        0.507046568627451,
+        0.5445261437908496,
+        0.6455269607843137
+      ],
+      "whole": true,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/1269.jpg"
+    },
+    {
+      "image_id": 963,
+      "source": "batch_4/000098.JPG",
+      "url": "https://img.tacodataset.org/img/32911997887.jpg",
+      "label": 7,
+      "box": [
+        0.34844771241830064,
+        0.6173406862745098,
+        0.6196895424836601,
+        0.7830882352941176
+      ],
+      "whole": false,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/963.jpg"
+    },
+    {
+      "image_id": 782,
+      "source": "batch_3/IMG_4992.JPG",
+      "url": "https://img.tacodataset.org/img/32911642107.jpg",
+      "label": 7,
+      "box": [
+        0.40727124183006536,
+        0.27481617647058826,
+        0.5923202614379085,
+        0.4252450980392157
+      ],
+      "whole": true,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/782.jpg"
+    },
+    {
+      "image_id": 13,
+      "source": "batch_1/000053.jpg",
+      "url": "https://img.tacodataset.org/img/47066067064.jpg",
+      "label": 7,
+      "box": [
+        0.25894599869876384,
+        0.2000976085895559,
+        0.9967469095640858,
+        0.6871644704734017
+      ],
+      "whole": false,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/13.jpg"
+    },
+    {
+      "image_id": 864,
+      "source": "batch_3/IMG_4950.JPG",
+      "url": "https://img.tacodataset.org/img/40889197533.jpg",
+      "label": 7,
+      "box": [
+        0.2928921568627451,
+        0.4192558496355965,
+        0.4742647058823529,
+        0.59186804756425
+      ],
+      "whole": false,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/864.jpg"
+    },
+    {
+      "image_id": 799,
+      "source": "batch_3/IMG_5049.JPG",
+      "url": "https://img.tacodataset.org/img/47803603292.jpg",
+      "label": 7,
+      "box": [
+        0.05923202614379085,
+        0.08762254901960784,
+        0.6446078431372549,
+        0.7319240196078431
+      ],
+      "whole": true,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/799.jpg"
+    },
+    {
+      "image_id": 905,
+      "source": "batch_4/000031.JPG",
+      "url": "https://img.tacodataset.org/img/47803897082.jpg",
+      "label": 7,
+      "box": [
+        0.47610294117647056,
+        0.44485294117647056,
+        0.6688112745098039,
+        0.6294934640522876
+      ],
+      "whole": true,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/905.jpg"
+    },
+    {
+      "image_id": 953,
+      "source": "batch_4/000087.JPG",
+      "url": "https://img.tacodataset.org/img/33978817518.jpg",
+      "label": 7,
+      "box": [
+        0.5900735294117647,
+        0.19281045751633988,
+        0.6829044117647058,
+        0.5200163398692811
+      ],
+      "whole": true,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/953.jpg"
+    },
+    {
+      "image_id": 63,
+      "source": "batch_1/000084.JPG",
+      "url": "https://img.tacodataset.org/img/40888905013.jpg",
+      "label": 7,
+      "box": [
+        0.2863562091503268,
+        0.6712622549019608,
+        0.5334967320261438,
+        0.8425245098039216
+      ],
+      "whole": true,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/63.jpg"
+    },
+    {
+      "image_id": 873,
+      "source": "batch_3/IMG_5067.JPG",
+      "url": "https://img.tacodataset.org/img/47855823101.jpg",
+      "label": 7,
+      "box": [
+        0.012254901960784314,
+        0.2668504901960784,
+        0.5098039215686274,
+        0.741421568627451
+      ],
+      "whole": false,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/873.jpg"
+    },
+    {
+      "image_id": 47,
+      "source": "batch_1/000065.JPG",
+      "url": "https://img.tacodataset.org/img/40888891223.jpg",
+      "label": 7,
+      "box": [
+        0.016237745098039217,
+        0.19607843137254902,
+        0.33517156862745096,
+        0.6237745098039216
+      ],
+      "whole": false,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/47.jpg"
+    },
+    {
+      "image_id": 23,
+      "source": "batch_1/000054.jpg",
+      "url": "https://img.tacodataset.org/img/47803340592.jpg",
+      "label": 7,
+      "box": [
+        0.6837996096291477,
+        0.09858467545143973,
+        1.0,
+        0.6246949731576379
+      ],
+      "whole": false,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/23.jpg"
+    },
+    {
+      "image_id": 1113,
+      "source": "batch_6/000065.JPG",
+      "url": "https://img.tacodataset.org/img/47066779864.jpg",
+      "label": 7,
+      "box": [
+        0.17851307189542484,
+        0.3943014705882353,
+        0.41380718954248363,
+        0.6090686274509803
+      ],
+      "whole": true,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/1113.jpg"
+    },
+    {
+      "image_id": 15,
+      "source": "batch_1/000058.jpg",
+      "url": "https://img.tacodataset.org/img/46939252345.jpg",
+      "label": 7,
+      "box": [
+        0.5217957059206246,
+        0.19765739385065886,
+        0.8776837996096292,
+        0.8828696925329429
+      ],
+      "whole": true,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/15.jpg"
+    },
+    {
+      "image_id": 72,
+      "source": "batch_1/000094.JPG",
+      "url": "https://img.tacodataset.org/img/33978225078.jpg",
+      "label": 7,
+      "box": [
+        0.1270424836601307,
+        0.22334558823529413,
+        0.7426470588235294,
+        0.7561274509803921
+      ],
+      "whole": false,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/72.jpg"
+    },
+    {
+      "image_id": 1157,
+      "source": "batch_6/000019.JPG",
+      "url": "https://img.tacodataset.org/img/47804039552.jpg",
+      "label": 7,
+      "box": [
+        0.29105392156862747,
+        0.3284313725490196,
+        0.5680147058823529,
+        0.5751633986928104
+      ],
+      "whole": true,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/1157.jpg"
+    },
+    {
+      "image_id": 1167,
+      "source": "batch_6/000007.JPG",
+      "url": "https://img.tacodataset.org/img/46939995835.jpg",
+      "label": 7,
+      "box": [
+        0.3590686274509804,
+        0.4322916666666667,
+        0.9893790849673203,
+        0.7144607843137255
+      ],
+      "whole": true,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/1167.jpg"
+    },
+    {
+      "image_id": 93,
+      "source": "batch_1/000120.JPG",
+      "url": "https://img.tacodataset.org/img/32911436277.jpg",
+      "label": 7,
+      "box": [
+        0.24223856209150327,
+        0.3700980392156863,
+        0.7777777777777778,
+        0.6323529411764706
+      ],
+      "whole": true,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/93.jpg"
+    },
+    {
+      "image_id": 922,
+      "source": "batch_4/000052.JPG",
+      "url": "https://img.tacodataset.org/img/32911977467.jpg",
+      "label": 7,
+      "box": [
+        0.17687908496732027,
+        0.4025735294117647,
+        0.46119281045751637,
+        0.5900735294117647
+      ],
+      "whole": true,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/922.jpg"
+    },
+    {
+      "image_id": 959,
+      "source": "batch_4/000094.JPG",
+      "url": "https://img.tacodataset.org/img/47856113491.jpg",
+      "label": 7,
+      "box": [
+        0.5189950980392157,
+        0.44689542483660133,
+        0.758578431372549,
+        0.6862745098039216
+      ],
+      "whole": true,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/959.jpg"
+    },
+    {
+      "image_id": 1096,
+      "source": "batch_6/000085.JPG",
+      "url": "https://img.tacodataset.org/img/47856229231.jpg",
+      "label": 7,
+      "box": [
+        0.2610294117647059,
+        0.4341299019607843,
+        0.48447712418300654,
+        0.5965073529411765
+      ],
+      "whole": true,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/1096.jpg"
+    },
+    {
+      "image_id": 824,
+      "source": "batch_3/IMG_4878.JPG",
+      "url": "https://img.tacodataset.org/img/47803620622.jpg",
+      "label": 7,
+      "box": [
+        0.25275735294117646,
+        0.4852941176470588,
+        0.7503063725490197,
+        0.9513888888888888
+      ],
+      "whole": false,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/824.jpg"
+    },
+    {
+      "image_id": 1193,
+      "source": "batch_7/000022.JPG",
+      "url": "https://img.tacodataset.org/img/47066834024.jpg",
+      "label": 7,
+      "box": [
+        0.2763480392156863,
+        0.4493464052287582,
+        0.4681372549019608,
+        0.7765522875816994
+      ],
+      "whole": false,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/1193.jpg"
+    },
+    {
+      "image_id": 1199,
+      "source": "batch_7/000031.JPG",
+      "url": "https://img.tacodataset.org/img/40889665973.jpg",
+      "label": 7,
+      "box": [
+        0.3525326797385621,
+        0.32015931372549017,
+        0.7389705882352942,
+        0.6026348039215687
+      ],
+      "whole": false,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/1199.jpg"
+    },
+    {
+      "image_id": 822,
+      "source": "batch_3/IMG_4876.JPG",
+      "url": "https://img.tacodataset.org/img/47803615012.jpg",
+      "label": 7,
+      "box": [
+        0.004493464052287581,
+        0.15349264705882354,
+        0.9285130718954249,
+        0.4696691176470588
+      ],
+      "whole": false,
+      "license": null,
+      "split": "train",
+      "path": "data/taco/images/822.jpg"
+    },
+    {
+      "image_id": 1012,
+      "source": "batch_5/000113.JPG",
+      "url": "https://img.tacodataset.org/img/40889565903.jpg",
+      "label": 2,
+      "box": [
+        0.24387254901960784,
+        0.26348039215686275,
+        0.46017156862745096,
+        0.45874183006535946
+      ],
+      "whole": false,
+      "license": null,
+      "split": "val",
+      "path": "data/taco/images/1012.jpg"
+    },
+    {
+      "image_id": 1029,
+      "source": "batch_5/000012.JPG",
+      "url": "https://img.tacodataset.org/img/32912038327.jpg",
+      "label": 2,
+      "box": [
+        0.565359477124183,
+        0.3017769607843137,
+        1.0,
+        0.5637254901960784
+      ],
+      "whole": false,
+      "license": null,
+      "split": "val",
+      "path": "data/taco/images/1029.jpg"
+    },
+    {
+      "image_id": 1064,
+      "source": "batch_5/000049.JPG",
+      "url": "https://img.tacodataset.org/img/33978899298.jpg",
+      "label": 2,
+      "box": [
+        0.3227124183006536,
+        0.34589460784313725,
+        0.6303104575163399,
+        0.5520833333333334
+      ],
+      "whole": false,
+      "license": null,
+      "split": "val",
+      "path": "data/taco/images/1064.jpg"
+    },
+    {
+      "image_id": 1037,
+      "source": "batch_5/000020.JPG",
+      "url": "https://img.tacodataset.org/img/47803970522.jpg",
+      "label": 2,
+      "box": [
+        0.3917483660130719,
+        0.34650735294117646,
+        0.6348039215686274,
+        0.6222426470588235
+      ],
+      "whole": false,
+      "license": null,
+      "split": "val",
+      "path": "data/taco/images/1037.jpg"
+    },
+    {
+      "image_id": 997,
+      "source": "batch_5/000068.JPG",
+      "url": "https://img.tacodataset.org/img/33978859878.jpg",
+      "label": 2,
+      "box": [
+        0.3590686274509804,
+        0.4518995098039216,
+        0.690359477124183,
+        0.5943627450980392
+      ],
+      "whole": true,
+      "license": null,
+      "split": "val",
+      "path": "data/taco/images/997.jpg"
+    },
+    {
+      "image_id": 1021,
+      "source": "batch_5/000004.JPG",
+      "url": "https://img.tacodataset.org/img/46939901135.jpg",
+      "label": 5,
+      "box": [
+        0.6516544117647058,
+        0.28227124183006536,
+        0.8440563725490197,
+        0.49387254901960786
+      ],
+      "whole": false,
+      "license": null,
+      "split": "val",
+      "path": "data/taco/images/1021.jpg"
+    },
+    {
+      "image_id": 966,
+      "source": "batch_5/000073.JPG",
+      "url": "https://img.tacodataset.org/img/32912014107.jpg",
+      "label": 5,
+      "box": [
+        0.443218954248366,
+        0.5824142156862745,
+        0.6523692810457516,
+        0.7267156862745098
+      ],
+      "whole": true,
+      "license": null,
+      "split": "val",
+      "path": "data/taco/images/966.jpg"
+    },
+    {
+      "image_id": 983,
+      "source": "batch_5/000092.JPG",
+      "url": "https://img.tacodataset.org/img/46939881055.jpg",
+      "label": 6,
+      "box": [
+        0.2520424836601307,
+        0.4420955882352941,
+        0.47875816993464054,
+        0.6155024509803921
+      ],
+      "whole": true,
+      "license": null,
+      "split": "val",
+      "path": "data/taco/images/983.jpg"
+    },
+    {
+      "image_id": 1016,
+      "source": "batch_5/000117.JPG",
+      "url": "https://img.tacodataset.org/img/46939897105.jpg",
+      "label": 6,
+      "box": [
+        0.2539828431372549,
+        0.6801470588235294,
+        0.4641544117647059,
+        0.8651960784313726
+      ],
+      "whole": true,
+      "license": null,
+      "split": "val",
+      "path": "data/taco/images/1016.jpg"
+    },
+    {
+      "image_id": 1053,
+      "source": "batch_5/000037.JPG",
+      "url": "https://img.tacodataset.org/img/33978892848.jpg",
+      "label": 6,
+      "box": [
+        0.12867647058823528,
+        0.1801470588235294,
+        0.3562091503267974,
+        0.33088235294117646
+      ],
+      "whole": false,
+      "license": null,
+      "split": "val",
+      "path": "data/taco/images/1053.jpg"
+    },
+    {
+      "image_id": 1041,
+      "source": "batch_5/000024.JPG",
+      "url": "https://img.tacodataset.org/img/32912047857.jpg",
+      "label": 6,
+      "box": [
+        0.1715686274509804,
+        0.5275735294117647,
+        0.5294117647058824,
+        0.8072916666666666
+      ],
+      "whole": true,
+      "license": null,
+      "split": "val",
+      "path": "data/taco/images/1041.jpg"
+    },
+    {
+      "image_id": 965,
+      "source": "batch_5/000072.JPG",
+      "url": "https://img.tacodataset.org/img/33978843678.jpg",
+      "label": 7,
+      "box": [
+        0.4482230392156863,
+        0.2785947712418301,
+        0.6087622549019608,
+        0.46895424836601307
+      ],
+      "whole": true,
+      "license": null,
+      "split": "val",
+      "path": "data/taco/images/965.jpg"
+    },
+    {
+      "image_id": 1045,
+      "source": "batch_5/000028.JPG",
+      "url": "https://img.tacodataset.org/img/46939914075.jpg",
+      "label": 7,
+      "box": [
+        0.4309640522875817,
+        0.5281862745098039,
+        0.5702614379084967,
+        0.7306985294117647
+      ],
+      "whole": true,
+      "license": null,
+      "split": "val",
+      "path": "data/taco/images/1045.jpg"
+    },
+    {
+      "image_id": 1039,
+      "source": "batch_5/000022.JPG",
+      "url": "https://img.tacodataset.org/img/47066721294.jpg",
+      "label": 7,
+      "box": [
+        0.20915032679738563,
+        0.44393382352941174,
+        0.7769607843137255,
+        0.7539828431372549
+      ],
+      "whole": false,
+      "license": null,
+      "split": "val",
+      "path": "data/taco/images/1039.jpg"
+    },
+    {
+      "image_id": 1075,
+      "source": "batch_5/000061.JPG",
+      "url": "https://img.tacodataset.org/img/40889596053.jpg",
+      "label": 7,
+      "box": [
+        0.32393790849673204,
+        0.5474877450980392,
+        0.5408496732026143,
+        0.7212009803921569
+      ],
+      "whole": true,
+      "license": null,
+      "split": "val",
+      "path": "data/taco/images/1075.jpg"
+    },
+    {
+      "image_id": 1011,
+      "source": "batch_5/000112.JPG",
+      "url": "https://img.tacodataset.org/img/33978865458.jpg",
+      "label": 7,
+      "box": [
+        0.28717320261437906,
+        0.47181372549019607,
+        0.4848856209150327,
+        0.6436887254901961
+      ],
+      "whole": true,
+      "license": null,
+      "split": "val",
+      "path": "data/taco/images/1011.jpg"
+    }
+  ]
+}

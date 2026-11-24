@@ -1,0 +1,527 @@
+{
+  "classes": [
+    "Baterías",
+    "Biológico",
+    "Cartón",
+    "Ropa",
+    "Vidrio",
+    "Metal",
+    "Papel",
+    "Plástico",
+    "Zapatos",
+    "Otros residuos"
+  ],
+  "seed": 43,
+  "base_checkpoint_sha256": "19058a4caab51b94ee804a26a16a81a7e2a8b709bda797b1eb3f8dcb76c4b8c0",
+  "checkpoint_sha256": "32581c2949ab8f421c1e33f7dcec8b170ca3740e94590ff9a4dc18202dd1712a",
+  "selected_epoch": 2,
+  "external_views": {
+    "train": 269,
+    "val": 25,
+    "test": 30
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.8530962308868766,
+      "val_macro_f1": 0.7294771671295166,
+      "external_val": {
+        "recorte": {
+          "n": 16,
+          "accuracy": 0.3125
+        },
+        "completa": {
+          "n": 9,
+          "accuracy": 0.2222222238779068
+        },
+        "accuracy": 0.2800000011920929
+      }
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.7296340828761458,
+      "val_macro_f1": 0.7420929670333862,
+      "external_val": {
+        "recorte": {
+          "n": 16,
+          "accuracy": 0.375
+        },
+        "completa": {
+          "n": 9,
+          "accuracy": 0.4444444477558136
+        },
+        "accuracy": 0.4000000059604645
+      }
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.6658817054703832,
+      "val_macro_f1": 0.7515513896942139,
+      "external_val": {
+        "recorte": {
+          "n": 16,
+          "accuracy": 0.25
+        },
+        "completa": {
+          "n": 9,
+          "accuracy": 0.3333333432674408
+        },
+        "accuracy": 0.2800000011920929
+      }
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.6380510316230357,
+      "val_macro_f1": 0.7446773648262024,
+      "external_val": {
+        "recorte": {
+          "n": 16,
+          "accuracy": 0.375
+        },
+        "completa": {
+          "n": 9,
+          "accuracy": 0.3333333432674408
+        },
+        "accuracy": 0.36000001430511475
+      }
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.6097461432218552,
+      "val_macro_f1": 0.7271593809127808,
+      "external_val": {
+        "recorte": {
+          "n": 16,
+          "accuracy": 0.375
+        },
+        "completa": {
+          "n": 9,
+          "accuracy": 0.1111111119389534
+        },
+        "accuracy": 0.2800000011920929
+      }
+    },
+    {
+      "epoch": 6,
+      "train_loss": 0.5850562313571572,
+      "val_macro_f1": 0.7449629306793213,
+      "external_val": {
+        "recorte": {
+          "n": 16,
+          "accuracy": 0.375
+        },
+        "completa": {
+          "n": 9,
+          "accuracy": 0.2222222238779068
+        },
+        "accuracy": 0.3199999928474426
+      }
+    },
+    {
+      "epoch": 7,
+      "train_loss": 0.5766538567841053,
+      "val_macro_f1": 0.7404620051383972,
+      "external_val": {
+        "recorte": {
+          "n": 16,
+          "accuracy": 0.4375
+        },
+        "completa": {
+          "n": 9,
+          "accuracy": 0.1111111119389534
+        },
+        "accuracy": 0.3199999928474426
+      }
+    },
+    {
+      "epoch": 8,
+      "train_loss": 0.544398304540664,
+      "val_macro_f1": 0.7428184151649475,
+      "external_val": {
+        "recorte": {
+          "n": 16,
+          "accuracy": 0.375
+        },
+        "completa": {
+          "n": 9,
+          "accuracy": 0.1111111119389534
+        },
+        "accuracy": 0.2800000011920929
+      }
+    },
+    {
+      "epoch": 9,
+      "train_loss": 0.5560265029780567,
+      "val_macro_f1": 0.7383983731269836,
+      "external_val": {
+        "recorte": {
+          "n": 16,
+          "accuracy": 0.4375
+        },
+        "completa": {
+          "n": 9,
+          "accuracy": 0.2222222238779068
+        },
+        "accuracy": 0.36000001430511475
+      }
+    },
+    {
+      "epoch": 10,
+      "train_loss": 0.5415079561062157,
+      "val_macro_f1": 0.7381010055541992,
+      "external_val": {
+        "recorte": {
+          "n": 16,
+          "accuracy": 0.375
+        },
+        "completa": {
+          "n": 9,
+          "accuracy": 0.2222222238779068
+        },
+        "accuracy": 0.3199999928474426
+      }
+    },
+    {
+      "epoch": 11,
+      "train_loss": 0.543693314306438,
+      "val_macro_f1": 0.7393060326576233,
+      "external_val": {
+        "recorte": {
+          "n": 16,
+          "accuracy": 0.375
+        },
+        "completa": {
+          "n": 9,
+          "accuracy": 0.2222222238779068
+        },
+        "accuracy": 0.3199999928474426
+      }
+    },
+    {
+      "epoch": 12,
+      "train_loss": 0.5338067659176886,
+      "val_macro_f1": 0.7404748797416687,
+      "external_val": {
+        "recorte": {
+          "n": 16,
+          "accuracy": 0.4375
+        },
+        "completa": {
+          "n": 9,
+          "accuracy": 0.2222222238779068
+        },
+        "accuracy": 0.36000001430511475
+      }
+    }
+  ],
+  "thresholds": [
+    0.5,
+    0.5,
+    0.5899999737739563,
+    0.5,
+    0.5,
+    0.800000011920929,
+    0.5099999904632568,
+    0.5799999833106995,
+    0.5,
+    0.5
+  ],
+  "initial_external_val": {
+    "recorte": {
+      "n": 16,
+      "accuracy": 0.1875
+    },
+    "completa": {
+      "n": 9,
+      "accuracy": 0.0
+    },
+    "accuracy": 0.11999999731779099
+  },
+  "initial_internal_val_macro_f1": 0.7538416981697083,
+  "test": {
+    "n": 1840,
+    "accuracy": 0.758152186870575,
+    "macro_f1": 0.7490531802177429,
+    "confusion": [
+      [
+        95,
+        0,
+        4,
+        0,
+        3,
+        3,
+        1,
+        1,
+        3,
+        1
+      ],
+      [
+        3,
+        82,
+        2,
+        0,
+        3,
+        3,
+        5,
+        5,
+        2,
+        0
+      ],
+      [
+        4,
+        0,
+        162,
+        2,
+        8,
+        8,
+        16,
+        8,
+        4,
+        0
+      ],
+      [
+        2,
+        1,
+        4,
+        244,
+        1,
+        2,
+        8,
+        13,
+        7,
+        2
+      ],
+      [
+        2,
+        2,
+        6,
+        1,
+        199,
+        16,
+        7,
+        24,
+        3,
+        1
+      ],
+      [
+        9,
+        1,
+        4,
+        6,
+        10,
+        88,
+        7,
+        7,
+        7,
+        1
+      ],
+      [
+        2,
+        3,
+        17,
+        6,
+        6,
+        10,
+        135,
+        15,
+        4,
+        3
+      ],
+      [
+        3,
+        1,
+        15,
+        3,
+        12,
+        7,
+        15,
+        180,
+        0,
+        4
+      ],
+      [
+        7,
+        2,
+        6,
+        9,
+        3,
+        7,
+        9,
+        5,
+        169,
+        1
+      ],
+      [
+        2,
+        0,
+        3,
+        0,
+        3,
+        6,
+        4,
+        7,
+        2,
+        41
+      ]
+    ],
+    "accepted": 1840,
+    "correct_accepted": 1395,
+    "true_shoes": 218,
+    "correct_shoes": 169,
+    "false_shoes": 32
+  },
+  "selective": {
+    "n": 1840,
+    "accuracy": 0.758152186870575,
+    "macro_f1": 0.7490531802177429,
+    "confusion": [
+      [
+        95,
+        0,
+        4,
+        0,
+        3,
+        3,
+        1,
+        1,
+        3,
+        1
+      ],
+      [
+        3,
+        82,
+        2,
+        0,
+        3,
+        3,
+        5,
+        5,
+        2,
+        0
+      ],
+      [
+        4,
+        0,
+        162,
+        2,
+        8,
+        8,
+        16,
+        8,
+        4,
+        0
+      ],
+      [
+        2,
+        1,
+        4,
+        244,
+        1,
+        2,
+        8,
+        13,
+        7,
+        2
+      ],
+      [
+        2,
+        2,
+        6,
+        1,
+        199,
+        16,
+        7,
+        24,
+        3,
+        1
+      ],
+      [
+        9,
+        1,
+        4,
+        6,
+        10,
+        88,
+        7,
+        7,
+        7,
+        1
+      ],
+      [
+        2,
+        3,
+        17,
+        6,
+        6,
+        10,
+        135,
+        15,
+        4,
+        3
+      ],
+      [
+        3,
+        1,
+        15,
+        3,
+        12,
+        7,
+        15,
+        180,
+        0,
+        4
+      ],
+      [
+        7,
+        2,
+        6,
+        9,
+        3,
+        7,
+        9,
+        5,
+        169,
+        1
+      ],
+      [
+        2,
+        0,
+        3,
+        0,
+        3,
+        6,
+        4,
+        7,
+        2,
+        41
+      ]
+    ],
+    "accepted": 1442,
+    "correct_accepted": 1244,
+    "true_shoes": 218,
+    "correct_shoes": 163,
+    "false_shoes": 18
+  },
+  "external_test_before": {
+    "recorte": {
+      "n": 17,
+      "accuracy": 0.11764705926179886
+    },
+    "completa": {
+      "n": 13,
+      "accuracy": 0.07692307978868484
+    },
+    "accuracy": 0.10000000149011612
+  },
+  "external_test_after": {
+    "recorte": {
+      "n": 17,
+      "accuracy": 0.1764705926179886
+    },
+    "completa": {
+      "n": 13,
+      "accuracy": 0.1538461595773697
+    },
+    "accuracy": 0.1666666716337204
+  }
+}

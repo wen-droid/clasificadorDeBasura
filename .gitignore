@@ -1,0 +1,25 @@
+# Datasets locales. Los manifiestos conservan las particiones y la procedencia.
+/data/*
+!/data/fuente_dataset.json
+!/data/manifest.csv
+!/data/taco/
+/data/taco/*
+!/data/taco/manifest.json
+dataset/
+datasets/
+
+# Entornos, cachés y archivos locales.
+/.venv/
+/venv/
+__pycache__/
+*.py[cod]
+/.cache/
+.ipynb_checkpoints/
+/.informe_qa/
+.env
+.env.*
+!.env.example
+~$*.docx
+*.tmp
+Thumbs.db
+.DS_Store

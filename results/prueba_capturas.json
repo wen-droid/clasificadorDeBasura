@@ -1,0 +1,31 @@
+{
+  "checkpoint_sha256": "32581c2949ab8f421c1e33f7dcec8b170ca3740e94590ff9a4dc18202dd1712a",
+  "interfaz": "Microsoft Edge, archivo HTML local, fotografías completas",
+  "fotos": [
+    {
+      "archivo": "shoes_77.jpg",
+      "particion": "test",
+      "resultado": "Zapatos",
+      "puntuacion_por_ciento": 97.9
+    },
+    {
+      "archivo": "shoes_2.jpg",
+      "particion": "train",
+      "resultado": "Zapatos",
+      "puntuacion_por_ciento": 99.4
+    },
+    {
+      "archivo": "clothes_1.jpg",
+      "particion": "train",
+      "resultado": "Ropa",
+      "puntuacion_por_ciento": 93.0
+    },
+    {
+      "archivo": "batch_8/000007.jpg",
+      "fuente": "https://img.tacodataset.org/img/31761220157.jpg",
+      "particion": "TACO, lote excluido del entrenamiento, validación y prueba",
+      "resultado": "Plástico",
+      "puntuacion_por_ciento": 59.6
+    }
+  ]
+}

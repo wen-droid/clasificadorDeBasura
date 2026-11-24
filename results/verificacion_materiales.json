@@ -1,0 +1,11 @@
+{
+  "samples": 25,
+  "test_images": 20,
+  "same_prediction": 25,
+  "max_preprocess_difference": 0.0,
+  "max_probability_difference": 5.718653895980808e-07,
+  "sample_accuracy": 0.75,
+  "no_external_scripts": true,
+  "no_server_required": true,
+  "model_sha256": "d821010ee914bfaa6f15d75768213bf4355fe98d64b2eb65fd5458a1a53d0424"
+}

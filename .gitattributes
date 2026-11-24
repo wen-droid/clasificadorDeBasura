@@ -1,0 +1,4 @@
+# Conserva los bytes de los archivos generados y los hashes de los manifiestos.
+/data/manifest.csv -text
+/data/taco/manifest.json -text
+/CLASIFICADOR_RESIDUOS.html -text

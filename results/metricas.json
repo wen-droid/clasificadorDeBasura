@@ -1,0 +1,219 @@
+{
+  "accuracy": 0.6559956592512208,
+  "macro_f1": 0.6432814451310664,
+  "confusion_matrix": [
+    [
+      74,
+      4,
+      6,
+      1,
+      6,
+      5,
+      2,
+      4,
+      11,
+      1
+    ],
+    [
+      2,
+      86,
+      3,
+      1,
+      3,
+      0,
+      5,
+      1,
+      4,
+      0
+    ],
+    [
+      2,
+      5,
+      150,
+      1,
+      4,
+      5,
+      16,
+      15,
+      11,
+      3
+    ],
+    [
+      1,
+      7,
+      4,
+      222,
+      6,
+      5,
+      3,
+      14,
+      20,
+      2
+    ],
+    [
+      3,
+      4,
+      4,
+      5,
+      171,
+      13,
+      12,
+      22,
+      14,
+      13
+    ],
+    [
+      12,
+      6,
+      3,
+      8,
+      17,
+      64,
+      10,
+      5,
+      11,
+      4
+    ],
+    [
+      2,
+      8,
+      23,
+      12,
+      9,
+      7,
+      112,
+      12,
+      9,
+      7
+    ],
+    [
+      2,
+      5,
+      18,
+      11,
+      20,
+      8,
+      16,
+      140,
+      8,
+      12
+    ],
+    [
+      14,
+      6,
+      4,
+      16,
+      8,
+      6,
+      10,
+      6,
+      143,
+      5
+    ],
+    [
+      2,
+      0,
+      1,
+      1,
+      0,
+      3,
+      5,
+      7,
+      2,
+      47
+    ]
+  ],
+  "per_class": [
+    {
+      "class_name": "Baterías",
+      "precision": 0.6491228070175439,
+      "recall": 0.6491228070175439,
+      "f1": 0.6491228070175439,
+      "support": 114
+    },
+    {
+      "class_name": "Biológico",
+      "precision": 0.6564885496183206,
+      "recall": 0.819047619047619,
+      "f1": 0.7288135593220338,
+      "support": 105
+    },
+    {
+      "class_name": "Cartón",
+      "precision": 0.6944444444444444,
+      "recall": 0.7075471698113207,
+      "f1": 0.7009345794392523,
+      "support": 212
+    },
+    {
+      "class_name": "Ropa",
+      "precision": 0.7985611510791367,
+      "recall": 0.7816901408450704,
+      "f1": 0.790035587188612,
+      "support": 284
+    },
+    {
+      "class_name": "Vidrio",
+      "precision": 0.7008196721311475,
+      "recall": 0.6551724137931034,
+      "f1": 0.6772277227722773,
+      "support": 261
+    },
+    {
+      "class_name": "Metal",
+      "precision": 0.5517241379310345,
+      "recall": 0.45714285714285713,
+      "f1": 0.5,
+      "support": 140
+    },
+    {
+      "class_name": "Papel",
+      "precision": 0.5863874345549738,
+      "recall": 0.5572139303482587,
+      "f1": 0.5714285714285715,
+      "support": 201
+    },
+    {
+      "class_name": "Plástico",
+      "precision": 0.6194690265486725,
+      "recall": 0.5833333333333334,
+      "f1": 0.6008583690987124,
+      "support": 240
+    },
+    {
+      "class_name": "Zapatos",
+      "precision": 0.6137339055793991,
+      "recall": 0.6559633027522935,
+      "f1": 0.6341463414634145,
+      "support": 218
+    },
+    {
+      "class_name": "Otros residuos",
+      "precision": 0.5,
+      "recall": 0.6911764705882353,
+      "f1": 0.5802469135802469,
+      "support": 68
+    }
+  ],
+  "classes": [
+    "Baterías",
+    "Biológico",
+    "Cartón",
+    "Ropa",
+    "Vidrio",
+    "Metal",
+    "Papel",
+    "Plástico",
+    "Zapatos",
+    "Otros residuos"
+  ],
+  "n_test": 1843,
+  "checkpoint_sha256": "1d777a4f22106bf3c883bb67912495d78fd2d734347999266c431300ae8a1e88",
+  "manifest_sha256": "7fe4d5c2796a9dea175c5486fbce43a286bb4076a9793eec439dcc16f846d625",
+  "selected_epoch": 47,
+  "baseline_class": "Ropa",
+  "baseline_accuracy": 0.1540965816603364,
+  "evaluation_cpu_batch_seconds": 15.681714699996519,
+  "scope": "Exploratorio: agrupación visual automática; independencia de objetos pendiente de revisión humana.",
+  "no_external_test": true
+}

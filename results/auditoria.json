@@ -1,0 +1,89 @@
+{
+  "input_images": 12259,
+  "usable_images": 12259,
+  "exact_duplicates": 0,
+  "invalid": [],
+  "conflicting_pixel_hashes": [],
+  "classes": [
+    "Baterías",
+    "Biológico",
+    "Cartón",
+    "Ropa",
+    "Vidrio",
+    "Metal",
+    "Papel",
+    "Plástico",
+    "Zapatos",
+    "Otros residuos"
+  ],
+  "counts": {
+    "Baterías": {
+      "train": 528,
+      "val": 114,
+      "test": 114
+    },
+    "Biológico": {
+      "train": 489,
+      "test": 105,
+      "val": 105
+    },
+    "Cartón": {
+      "val": 212,
+      "train": 987,
+      "test": 212
+    },
+    "Ropa": {
+      "train": 1324,
+      "test": 284,
+      "val": 284
+    },
+    "Vidrio": {
+      "train": 1214,
+      "val": 261,
+      "test": 261
+    },
+    "Metal": {
+      "test": 140,
+      "train": 650,
+      "val": 140
+    },
+    "Papel": {
+      "train": 934,
+      "test": 201,
+      "val": 201
+    },
+    "Plástico": {
+      "train": 1117,
+      "test": 240,
+      "val": 240
+    },
+    "Zapatos": {
+      "val": 218,
+      "train": 1013,
+      "test": 218
+    },
+    "Otros residuos": {
+      "test": 68,
+      "val": 68,
+      "train": 317
+    }
+  },
+  "groups": {
+    "Baterías": 526,
+    "Biológico": 698,
+    "Cartón": 1070,
+    "Ropa": 1789,
+    "Vidrio": 1427,
+    "Metal": 885,
+    "Papel": 1244,
+    "Plástico": 1379,
+    "Zapatos": 1295,
+    "Otros residuos": 431
+  },
+  "seed": 42,
+  "dhash_distance": 6,
+  "source": "https://www.kaggle.com/datasets/sumn2u/garbage-classification-v2",
+  "preprocessing": "EXIF, RGB, pad 96x96 bilineal gris. Variaciones aleatorias solo al entrenar.",
+  "independence": "Agrupos dHash heurísticos; identidad física sin verificación exhaustiva.",
+  "manifest_sha256": "7fe4d5c2796a9dea175c5486fbce43a286bb4076a9793eec439dcc16f846d625"
+}
