@@ -20,12 +20,21 @@ El exportador usa [models/escenas.pt](models/escenas.pt) y se detiene si falta e
 
 ## Repetir el entrenamiento
 
-1. Obtén las diez carpetas de la variante original de **Garbage Classification V2**, indicada en [data/fuente_dataset.json](data/fuente_dataset.json), y colócalas en `data/archive/original/` o `data/archive/data/`. El cargador valida los hashes de [data/manifest.csv](data/manifest.csv). La [lista de exclusiones](data/exclusiones_primer_avance.txt) fija las 19 fotos que faltaron en la ejecución histórica.
-2. Copia las fotos de **TACO** a `data/taco/images/` o recupéralas con el comando de abajo, que requiere curl y acceso a su servidor. Se usa [el manifiesto versionado](data/taco/manifest.json). Si alguna URL falla, reintenta o recupera la foto del respaldo del equipo. El código requiere todas las fotos registradas para repetir el ajuste.
-3. Trabaja en una copia del proyecto si quieres conservar los artefactos entregados. Estos comandos vuelven a generar los pesos de objetos y escenas, sus métricas y el HTML. El checkpoint original `models/mejor_modelo.pt` se usa para la comparación.
+El ZIP de entrega académica incluye las **12.259 imágenes originales** en `data/archive/original/` y las **204 fotos seleccionadas de TACO** en `data/taco/images/`. Extrae todo el ZIP antes de abrir la carpeta en VS Code. La [lista de exclusiones](data/exclusiones_primer_avance.txt) conserva las 19 ausencias históricas, por lo que el flujo de objetos y escenas usa 12.240 imágenes internas.
+
+Si obtuviste el código desde GitHub, ejecuta los siguientes comandos para reunir los datos. Necesitan curl y acceso a Kaggle y al servidor de TACO. El primero valida los píxeles con [data/manifest.csv](data/manifest.csv) y acepta también un ZIP descargado manualmente con `--origen RUTA.zip`. El segundo usa las URL de [data/taco/manifest.json](data/taco/manifest.json) y conserva las particiones.
 
 ```text
+python -m pip install -r requirements.txt
+python src/preparar_originales.py
 python src/preparar_escenas.py --desde-manifiesto
+```
+
+Con el ZIP académico ya extraído puedes ejecutar directamente la preparación local y el entrenamiento. La instalación de dependencias puede requerir Internet. Los scripts de entrenamiento vuelven a generar los pesos de objetos y escenas, sus métricas y el HTML. Trabaja en una copia si quieres conservar los artefactos entregados. El checkpoint `models/mejor_modelo.pt` se usa para la comparación.
+
+```text
+python -m pip install -r requirements.txt
+python src/preparar_originales.py --verificar
 python src/objetos.py
 python src/escenas.py
 python src/export_web.py
@@ -36,8 +45,12 @@ En Google Colab, abre [el cuaderno](Clasificador_residuos_Colab.ipynb), cambia l
 
 ## Resultados y archivos del equipo
 
-- [Informe actualizado con los scripts en cada etapa](informe/Informe_primer_avance_APA.docx).
+- El informe final acompaña al ZIP como documento separado.
 - [Métricas de la CNN de objetos](results/objetos.json) y [métricas del modelo final](results/escenas.json). En las mismas 1.840 fotos del conjunto interno, el modelo inicial y el final obtuvieron 65,6 % y 75,8 % de exactitud, respectivamente. El final acertó 2 de 13 fotos completas en la prueba externa de TACO.
 - [Pruebas funcionales en Microsoft Edge](results/prueba_capturas.json) y [verificación de paridad del modelo final](results/verificacion_escenas.json).
-- [Paquete descargable del equipo](Clasificador_residuos_equipo.zip). Las colecciones de imágenes se obtienen por separado.
 - Los scripts `src/prepare.py`, `src/train.py`, `src/evaluate.py` y `src/crear_word.py` documentan la CNN inicial. El ensayo de cinco materiales está en `src/materiales.py`. Para exportar una variante histórica, usa `--modelo objetos`, `--modelo materiales` o `--modelo inicial` junto con `--salida ARCHIVO.html`.
+
+## Fuentes de las imágenes
+
+- [Garbage Classification V2](https://www.kaggle.com/datasets/sumn2u/garbage-classification-v2), publicado por sumn2u. Kaggle identifica la colección con licencia MIT. La ruta y la variante empleadas se registran en [data/fuente_dataset.json](data/fuente_dataset.json).
+- [TACO](https://github.com/pedropro/TACO), de Pedro F. Proença y Pedro Simões. El [manifiesto](data/taco/manifest.json) registra las URL, identificadores y los datos de licencia disponibles para cada foto. El paquete conserva la versión redimensionada usada para entrenar.

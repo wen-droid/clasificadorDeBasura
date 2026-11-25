@@ -18,6 +18,7 @@ __pycache__/
 .ipynb_checkpoints/
 /.informe_qa/
 /Ejecuciones_equipo/
+/informe/
 .env
 .env.*
 !.env.example
