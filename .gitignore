@@ -2,6 +2,7 @@
 /data/*
 !/data/fuente_dataset.json
 !/data/manifest.csv
+!/data/exclusiones_primer_avance.txt
 !/data/taco/
 /data/taco/*
 !/data/taco/manifest.json
@@ -16,6 +17,7 @@ __pycache__/
 /.cache/
 .ipynb_checkpoints/
 /.informe_qa/
+/Ejecuciones_equipo/
 .env
 .env.*
 !.env.example

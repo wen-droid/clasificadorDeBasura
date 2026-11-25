@@ -3,7 +3,7 @@
   "test_images": 20,
   "same_prediction": 25,
   "max_preprocess_difference": 0.0,
-  "max_probability_difference": 4.379353248928908e-07,
+  "max_probability_difference": 5.273422920559767e-07,
   "sample_accuracy": 0.85,
   "no_external_scripts": true,
   "no_server_required": true,

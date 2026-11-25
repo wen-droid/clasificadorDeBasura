@@ -4,7 +4,6 @@ import csv
 import copy
 import hashlib
 import math
-from pathlib import Path
 
 import numpy as np
 from PIL import Image, ImageOps
@@ -12,7 +11,7 @@ import torch
 from torch import nn
 from torch.nn import functional as F
 
-from common import ROOT, CLASSES as ORIGINAL_CLASSES, load_model, save_json
+from common import ROOT, CLASSES as ORIGINAL_CLASSES, excluded_originals, load_model, original_image_path, save_json
 
 LABELS = ['Orgánico', 'Papel y cartón', 'Vidrio', 'Metal', 'Plástico', 'Fuera de las cinco categorías']
 # Índices en el mismo orden que ORIGINAL_CLASSES.
@@ -42,14 +41,15 @@ def read_images():
     partitions = {s: ([], [], []) for s in ('train', 'val', 'test')}
     missing = []
     groups = {}
+    excluded = excluded_originals()
     with (ROOT / 'data/manifest.csv').open(encoding='utf-8') as stream:
         for row in csv.DictReader(stream):
             split = row['split']
             if groups.setdefault(row['group'], split) != split:
                 raise ValueError('Grupo compartido entre particiones')
-            original = Path(row['original'])
-            candidates = [ROOT / original, ROOT / 'data/archive/data' / original.parent.name / original.name]
-            file = next((p for p in candidates if p.is_file()), None)
+            if row['original'] in excluded:
+                continue
+            file = original_image_path(ROOT, row['original'])
             if file is None:
                 missing.append(row['original'])
                 continue
@@ -63,13 +63,16 @@ def read_images():
                 label = ORIGINAL_CLASSES.index(row['label'])
                 labels.append(GROUP[label])
                 originals.append(label)
+    if missing:
+        raise FileNotFoundError(f'Faltan {len(missing)} originales fuera de las exclusiones fijadas. '
+                                'Revisa data/archive/original o data/archive/data. Primer archivo: ' + missing[0])
     data = {}
     for split, (imgs, labels, original) in partitions.items():
         if set(labels) != set(range(len(LABELS))):
             raise ValueError(f'Faltan categorías en la partición {split}. Revisa las fotos originales.')
         data[split] = (torch.from_numpy(np.stack(imgs)).permute(0, 3, 1, 2), torch.tensor(labels), torch.tensor(original))
         imgs.clear()
-    return data, missing
+    return data, sorted(excluded)
 
 
 def augment(x):
@@ -107,7 +110,7 @@ def main():
         parser.error('--epochs debe ser positivo')
     torch.manual_seed(42)
     torch.set_num_threads(4)
-    data, missing = read_images()
+    data, excluded = read_images()
     train, labels, _ = data['train']
     val, truth, _ = data['val']
     print('Particiones:', {k:len(v[1]) for k,v in data.items()}, flush=True)
@@ -155,7 +158,7 @@ def main():
     old,_=load_model()
     baseline=torch.tensor(GROUP)[scores(old,images).argmax(1)]
     report=dict(classes=LABELS,seed=42,epochs=args.epochs,selected_epoch=checkpoint['epoch'],
-                splits={k:len(v[1]) for k,v in data.items()},missing=missing,history=history,
+                splits={k:len(v[1]) for k,v in data.items()},excluded=excluded,history=history,
                 manifest_sha256=hashlib.sha256((ROOT/'data/manifest.csv').read_bytes()).hexdigest(),
                 baseline=metrics(baseline,y),test=metrics(pred,y),threshold=threshold,
                 accepted_materials=int(accept.sum()),correct_accepted=int(((pred==y)&accept).sum()),

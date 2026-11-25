@@ -12,6 +12,16 @@ CLASSES = ['Baterías', 'Biológico', 'Cartón', 'Ropa', 'Vidrio', 'Metal', 'Pap
 SIZE = 96
 
 
+def original_image_path(root, original):
+    original = Path(original)
+    candidates = (root / original, root / 'data/archive/data' / original.parent.name / original.name)
+    return next((path for path in candidates if path.is_file()), None)
+
+
+def excluded_originals():
+    return set((ROOT / 'data/exclusiones_primer_avance.txt').read_text(encoding='utf-8').splitlines())
+
+
 def save_json(path, value):
     Path(path).parent.mkdir(parents=True, exist_ok=True)
     Path(path).write_text(json.dumps(value, ensure_ascii=False, indent=2), encoding='utf-8')

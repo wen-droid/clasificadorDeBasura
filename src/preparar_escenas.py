@@ -82,8 +82,31 @@ def download(row):
 
 def main():
     parser=argparse.ArgumentParser()
-    parser.add_argument('--index',type=Path)
+    mode = parser.add_mutually_exclusive_group()
+    mode.add_argument('--desde-manifiesto', action='store_true',
+                      help='Descarga las fotos versionadas sin modificar el manifiesto (opción predeterminada).')
+    mode.add_argument('--nuevo-subconjunto', action='store_true',
+                      help='Selecciona otro subconjunto y reemplaza el manifiesto.')
+    mode.add_argument('--index', type=Path, help='Genera otro manifiesto desde anotaciones locales.')
     args=parser.parse_args()
+    if not (args.nuevo_subconjunto or args.index):
+        rows = json.loads((DATA/'manifest.json').read_text(encoding='utf-8'))['rows']
+        if not rows or any(
+            row['path'] != f"data/taco/images/{row['image_id']}.jpg"
+            or urlparse(row['url']).scheme != 'https'
+            or urlparse(row['url']).hostname != 'img.tacodataset.org'
+            for row in rows
+        ):
+            parser.error('El manifiesto contiene rutas o direcciones inesperadas.')
+        (DATA/'images').mkdir(parents=True, exist_ok=True)
+        with ThreadPoolExecutor(max_workers=10) as pool:
+            saved = list(pool.map(download, rows))
+        missing = [row['path'] for row, result in zip(rows, saved) if result is None]
+        if missing:
+            parser.error(f'Faltan {len(missing)} fotos de TACO. Copia desde el respaldo o reintenta: '
+                         + ', '.join(missing[:8]))
+        print('Fotos disponibles del manifiesto:', len(rows))
+        return
     content = args.index.read_bytes() if args.index else subprocess.run(
         ['curl','--fail','--silent','--show-error','--location','--max-time','60',INDEX],
         capture_output=True,check=True).stdout

@@ -76,7 +76,8 @@ def calibrate(probs, truth):
 def main():
     torch.manual_seed(42)
     torch.set_num_threads(4)
-    data, missing = read_images()
+    previous, _ = load_model()
+    data, excluded = read_images()
     train, _, labels = data['train']
     val, _, truth = data['val']
     model = ObjectCNN().to(memory_format=torch.channels_last)
@@ -110,14 +111,13 @@ def main():
     thresholds = calibrate(predict(val, model.probabilities), truth)
     images, _, target = data['test']
     probs = predict(images, model.probabilities)
-    previous, _ = load_model()
     baseline = predict(images, lambda x: previous(x).softmax(1))
     checkpoint['thresholds'] = thresholds.tolist()
     temp = CHECKPOINT.with_suffix('.pt.tmp')
     torch.save(checkpoint,temp)
     temp.replace(CHECKPOINT)
     report = dict(classes=CLASSES, seed=42, epochs=EPOCHS, selected_epoch=checkpoint['epoch'],
-                  thresholds=thresholds.tolist(), splits={s:len(v[2]) for s,v in data.items()}, missing=missing,
+                  thresholds=thresholds.tolist(), splits={s:len(v[2]) for s,v in data.items()}, excluded=excluded,
                   history=history, original=measure(baseline,target), test=measure(probs,target),
                   selective=measure(probs,target,thresholds),
                   checkpoint_sha256=hashlib.sha256(CHECKPOINT.read_bytes()).hexdigest())

@@ -1,18 +1,33 @@
-"""Exporta el último clasificador disponible a un HTML autónomo."""
+"""Exporta el modelo de escenas o una variante histórica indicada explícitamente."""
+import argparse
 import base64
 import hashlib
 import json
 import os
+from pathlib import Path
 import torch
 from common import ROOT, load_model
 from materiales import CHECKPOINT, MaterialCNN
 from objetos import CHECKPOINT as OBJECT_CHECKPOINT, ObjectCNN
 from escenas import CHECKPOINT as SCENE_CHECKPOINT
 
+MODELS = {
+    'escenas': SCENE_CHECKPOINT,
+    'objetos': OBJECT_CHECKPOINT,
+    'materiales': CHECKPOINT,
+    'inicial': ROOT / 'models/mejor_modelo.pt',
+}
+
 
 def main():
-    path = next((p for p in (SCENE_CHECKPOINT, OBJECT_CHECKPOINT, CHECKPOINT) if p.is_file()), None)
-    if path is not None:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--modelo', choices=MODELS, default='escenas')
+    parser.add_argument('--salida', type=Path, default=ROOT / 'CLASIFICADOR_RESIDUOS.html')
+    args = parser.parse_args()
+    path = MODELS[args.modelo]
+    if not path.is_file():
+        parser.error(f'Falta {path.relative_to(ROOT)}. Obtén los pesos o entrena el modelo seleccionado.')
+    if args.modelo != 'inicial':
         objects = path != CHECKPOINT
         checkpoint = torch.load(path, map_location='cpu', weights_only=True)
         model = (ObjectCNN() if objects else MaterialCNN()).eval()
@@ -35,7 +50,6 @@ def main():
         tensors = model.state_dict()
         metadata = {}
         template = 'web_template.html'
-        path = ROOT / 'models/mejor_modelo.pt'
     weights = {name: base64.b64encode(t.detach().cpu().numpy().astype('<f4').tobytes()).decode('ascii')
                for name, t in tensors.items()}
     payload = dict(classes=checkpoint['classes'], weights=weights, **metadata,
@@ -48,7 +62,7 @@ def main():
                         '</b></div></div>' for name in classes)
         html = html.replace('/*__CARDS__*/', names).replace('/*__COUNT__*/', str(len(classes)))
     output = html.replace('/*__ENGINE__*/', engine).replace('/*__MODEL__*/', json.dumps(payload,ensure_ascii=False))
-    target = ROOT / 'CLASIFICADOR_RESIDUOS.html'
+    target = args.salida
     temporary = target.with_suffix('.html.tmp')
     temporary.write_text(output, encoding='utf-8')
     os.replace(temporary, target)

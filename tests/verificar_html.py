@@ -1,4 +1,5 @@
 """Verifica que el HTML autónomo ejecuta el mismo modelo que PyTorch."""
+import argparse
 import hashlib
 import csv
 import json
@@ -11,21 +12,31 @@ sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'src'))
 import numpy as np
 from PIL import Image, ImageOps
 import torch
-from common import ROOT, CLASSES, load_model, preprocess, save_json
+from common import ROOT, CLASSES, excluded_originals, load_model, original_image_path, preprocess, save_json
+from export_web import MODELS
 from materiales import MaterialCNN, CHECKPOINT, GROUP
 from objetos import ObjectCNN, CHECKPOINT as OBJECT_CHECKPOINT
 from escenas import CHECKPOINT as SCENE_CHECKPOINT
 
 
 def main():
-    html=(ROOT/'CLASIFICADOR_RESIDUOS.html').read_text(encoding='utf-8')
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--modelo', choices=MODELS, default='escenas')
+    parser.add_argument('--html', type=Path, default=ROOT/'CLASIFICADOR_RESIDUOS.html')
+    parser.add_argument('--datos', type=Path, default=ROOT, help='Raíz que contiene data/archive.')
+    parser.add_argument('--solo-sinteticas', action='store_true', help='Comprueba paridad sin el dataset.')
+    parser.add_argument('--guardar', action='store_true', help='Guarda la verificación con fotos en results/.')
+    args = parser.parse_args()
+    if args.guardar and args.solo_sinteticas:
+        parser.error('--guardar requiere una verificación con fotos.')
+    html=args.html.read_text(encoding='utf-8')
     model_data=json.loads(re.search(r'<script id="cnn-model" type="application/json">(.*?)</script>',html,re.S).group(1))
     assert '<script src=' not in html and 'fetch(' not in html
     assert 'href="/informe"' not in html
-    materials = 'threshold' in model_data
-    objects = 'thresholds' in model_data
+    materials = args.modelo == 'materiales'
+    objects = args.modelo in {'escenas', 'objetos'}
+    path = MODELS[args.modelo]
     if objects:
-        path = SCENE_CHECKPOINT if SCENE_CHECKPOINT.exists() else OBJECT_CHECKPOINT
         checkpoint = torch.load(path,map_location='cpu',weights_only=True)
         model = ObjectCNN().eval()
         model.load_state_dict(checkpoint['state_dict'])
@@ -34,21 +45,25 @@ def main():
         checkpoint = torch.load(CHECKPOINT,map_location='cpu',weights_only=True)
         model = MaterialCNN().eval()
         model.load_state_dict(checkpoint['state_dict'])
-        path = CHECKPOINT
+        assert model_data['threshold'] == checkpoint['threshold']
     else:
         model,checkpoint = load_model()
-        path = ROOT/'models/mejor_modelo.pt'
     assert model_data['classes'] == checkpoint['classes']
     assert hashlib.sha256(path.read_bytes()).hexdigest() == model_data['checkpoint_sha256']
     torch.set_num_threads(2)
-    rows=[r for r in csv.DictReader((ROOT/'data/manifest.csv').open(encoding='utf-8')) if r['split']=='test']
-    for r in rows:
-        original = Path(r['original'])
-        candidates = (ROOT/r['path'], ROOT/original, ROOT/'data/archive/data'/original.parent.name/original.name)
-        r['available'] = next((p for p in candidates if p.is_file()),None)
-    rows=[r for r in rows if r['available']]
-    assert set(r['label'] for r in rows)==set(CLASSES)
-    rows=[r for c in CLASSES for r in [x for x in rows if x['label']==c][:2]]
+    rows = []
+    if not args.solo_sinteticas:
+        excluded = excluded_originals()
+        with (ROOT/'data/manifest.csv').open(encoding='utf-8') as stream:
+            candidates = [r for r in csv.DictReader(stream)
+                          if r['split']=='test' and r['original'] not in excluded]
+        for r in candidates:
+            r['available'] = original_image_path(args.datos, r['original'])
+        for label in CLASSES:
+            selected = [r for r in candidates if r['label']==label and r['available']][:2]
+            if len(selected) < 2:
+                parser.error(f'Faltan fotos de prueba de {label}. Usa --datos o --solo-sinteticas.')
+            rows.extend(selected)
     def infer(tensor):
         x = tensor.unsqueeze(0)
         probs = model.probabilities(x) if objects else model(x).softmax(1)
@@ -77,6 +92,7 @@ def main():
     with tempfile.TemporaryDirectory(prefix='residuos_html_') as td:
         tmp=Path(td)
         engine = re.search(r'<script id="cnn-engine"[^>]*>(.*?)</script>', html, re.S).group(1)
+        assert engine == (ROOT/'src/browser_engine.js').read_text(encoding='utf-8')
         (tmp/'engine.cjs').write_text(engine, encoding='utf-8')
         (tmp/'model.json').write_text(json.dumps(model_data),encoding='utf-8')
         (tmp/'inputs.json').write_text(json.dumps(inputs),encoding='utf-8')
@@ -95,7 +111,9 @@ fs.writeFileSync(process.argv[5],JSON.stringify(out));'''
     assert max_pixels<1e-6, f'Preprocesamiento distinto: {max_pixels}'
     assert max_scores<2e-5, f'Inferencia distinta: {max_scores}'
     assert agree==len(inputs)
-    html_accuracy=sum(int(np.argmax(o['scores'])==y) for o,y in zip(outputs,true))/len(true)
+    html_accuracy = (
+        sum(int(np.argmax(o['scores'])==y) for o,y in zip(outputs,true))/len(true) if true else None
+    )
     if materials or objects:
         def decision(scores):
             winner = int(np.argmax(scores))
@@ -107,7 +125,9 @@ fs.writeFileSync(process.argv[5],JSON.stringify(out));'''
     check=dict(samples=len(inputs),test_images=len(rows),same_prediction=agree,max_preprocess_difference=max_pixels,
                max_probability_difference=max_scores,sample_accuracy=html_accuracy,no_external_scripts=True,
                no_server_required=True,model_sha256=model_data['checkpoint_sha256'])
-    save_json(ROOT/'results'/('verificacion_escenas.json' if path == SCENE_CHECKPOINT else 'verificacion_objetos.json' if objects else 'verificacion_materiales.json' if materials else 'verificacion_html.json'),check)
+    if args.guardar:
+        name = 'html' if args.modelo == 'inicial' else args.modelo
+        save_json(ROOT/'results'/f'verificacion_{name}.json',check)
     print(json.dumps(check,ensure_ascii=False,indent=2))
 
 

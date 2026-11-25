@@ -8,7 +8,7 @@ from PIL import Image, ImageOps
 import torch
 from torch.nn import functional as F
 
-from common import ROOT, CLASSES, save_json, load_model
+from common import ROOT, CLASSES, save_json
 from materiales import read_images, augment
 from objetos import CHECKPOINT as BASE, ObjectCNN, calibrate, predict, measure
 
@@ -18,6 +18,10 @@ REPORT = ROOT/'results/escenas.json'
 
 def taco_data():
     rows=json.loads((ROOT/'data/taco/manifest.json').read_text(encoding='utf8'))['rows']
+    missing = [row['path'] for row in rows if not (ROOT/row['path']).is_file()]
+    if missing:
+        raise FileNotFoundError(f'Faltan {len(missing)} fotos de TACO. Copia el subconjunto o ejecuta '
+                                'python src/preparar_escenas.py --desde-manifiesto.')
     parts={}
     for split in ('train','val','test'):
         images,labels,views=[],[],[]
@@ -48,7 +52,8 @@ def exterior_scores(p,y,views):
     result={}
     for name in ['recorte','completa']:
         idx=[i for i,v in enumerate(views) if v==name]
-        result[name]=dict(n=len(idx),accuracy=(p[idx].argmax(1)==y[idx]).float().mean().item())
+        accuracy = (p[idx].argmax(1)==y[idx]).float().mean().item() if idx else None
+        result[name]=dict(n=len(idx),accuracy=accuracy)
     result['accuracy']=(p.argmax(1)==y).float().mean().item()
     return result
 
@@ -56,8 +61,8 @@ def exterior_scores(p,y,views):
 def main():
     torch.manual_seed(43)
     torch.set_num_threads(4)
-    original,_=read_images()
     exterior=taco_data()
+    original,_=read_images()
     train,_,labels=original['train']
     val,_,truth=original['val']
     add,targets,_=exterior['train']
